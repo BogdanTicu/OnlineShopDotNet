@@ -3,17 +3,27 @@ using OnlineShop12.Models;
 using OnlineShop12.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 namespace OnlineShop12.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _db;
-
-        public ProductsController(ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public ProductsController(
+        ApplicationDbContext context,
+        UserManager<ApplicationUser> userManager,
+        RoleManager<IdentityRole> roleManager
+        )
         {
             _db = context;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
+        
         public IActionResult Index()
         {
             var products = _db.Products.Include("Category");
@@ -66,7 +76,6 @@ namespace OnlineShop12.Controllers
             }
         }
 
-
         public IActionResult New()
         {
            
@@ -81,7 +90,6 @@ namespace OnlineShop12.Controllers
             ViewBag.Product = product;
             return View(product);
         }
-
 
         [HttpPost]
         public IActionResult New(Product product)

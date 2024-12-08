@@ -11,7 +11,7 @@ namespace OnlineShop12.Models
 
         public string Description { get; set; }
 
-        
+        public virtual ApplicationUser User { get; set; }
         public virtual ICollection<Product>? Products { get; set; }
     }
 }
