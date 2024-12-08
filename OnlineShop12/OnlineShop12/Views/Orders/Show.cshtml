@@ -1,0 +1,17 @@
+﻿<h2>Afisare comanda</h2>
+<br />
+
+<p>@ViewBag.Order.Id_Order</p>
+
+<br />
+
+<form method="post" action="/Orders/Delete/@ViewBag.Order.Id_Order">
+
+    <button type="submit">Sterge comanda</button>
+
+</form>
+
+<br />
+<a href="/Orders/Index">Afisare comenzi</a>
+
+

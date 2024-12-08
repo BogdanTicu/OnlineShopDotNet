@@ -1,0 +1,17 @@
+﻿<h2>Afisare comenzi</h2>
+<br />
+
+@foreach (var ord in ViewBag.Orders)
+{
+    <p>@ord.Id_Order</p>
+
+    <br />
+    <a href="/Orders/Show/@ord.Id_Order">Afisare comanda</a>
+    <br />
+    <a href="/Orders/Edit/@ord.Id_Order">Editare comanda</a>
+    <hr />
+
+}
+
+<a href="/Orders/New">Adaugare comanda</a>
+<br />

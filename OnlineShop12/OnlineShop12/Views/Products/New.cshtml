@@ -1,0 +1,33 @@
+﻿@model OnlineShop12.Models.Product;
+
+<h2>Formular adaugare produse</h2>
+<form method="post" action="/Products/New">
+    
+    <label>Denumire produs</label>
+    <input type="text" name="Title" />
+    <br />
+
+    <label>Descriere produs</label>
+    <input type="text" name="Description" />
+    <br />
+
+    <div class="form-group">
+        <label type="Id_Category">Selectati categoria</label>
+        <br />
+        <select asp-for="Id_Category" asp-items="Model.Categ" class="form-control">
+            <option value="">Selectati categoria</option>
+        </select>
+        <br />
+    </div>
+
+
+    <label>Pret produs</label>
+    <input type="text" name="Price" />
+    <br />
+
+    <label>Stoc produs</label>
+    <input type="text" name="Stock" />
+    <br />
+
+    <button class="btn btn-succes" type="submit">Adauga produsul</button>
+</form>

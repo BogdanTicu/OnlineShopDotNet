@@ -1,0 +1,125 @@
+﻿@model OnlineShop12.Models.Product
+
+<h2>Afisare produs</h2>
+<br />
+
+<label>Titlul produsului</label>
+<p>@ViewBag.Products.Title</p>
+
+
+<label>Descrierea produsului</label>
+<p>@ViewBag.Products.Description</p>
+
+<label>Categoria produsului</label>
+<p>@ViewBag.Products.Id_Category</p>
+
+<label>Pretul produsului</label>
+<p>@ViewBag.Products.Price</p>
+
+<label>Stocul produsului</label>
+<p>@ViewBag.Products.Stock</p>
+
+
+
+<form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
+    <button type="submit">Sterge produsul</button>
+
+</form>
+
+<br />
+
+<a href="/Products/Index">Afisare produse</a>
+
+
+@* Afisare recenzii impreuna cu butoanele de editare si stergere *@
+
+@foreach (var rev in Model.Reviews)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+
+                <div>
+
+                    <p>@rev.Content</p>
+                    <small>@rev.Date</small>
+
+                </div>
+                <br>
+
+                <div class="d-flex">
+
+                    <div>
+
+                        <a class="btn btn-outline-primary" asp-controller="Reviews" asp-action="Edit" asp-route-id="@rev.Id_Review">
+                            <i class="bi bi-pencil-square"></i> Editeaza
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@rev.Id_Review">
+
+                            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <br />
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
+    </div>
+}
+
+
+@* Afisarea formularului in care se poate adauga o recenzie *@
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="card">
+
+                <form method="post" asp-controller="Products" asp-action="Show">
+
+                    <div class="card-body">
+
+                        <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
+
+                        <label>Continut recenzie</label>
+                        <br />
+
+                        <textarea class="form-control" name="Content"></textarea>
+                        
+                        <br /><br />
+                        <button class="btn btn-success " type="submit">Adauga recenzia</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+    </div>
+
+</div>
+
