@@ -15,7 +15,7 @@ namespace OnlineShop12.Models
         [NotMapped]
         public IEnumerable<SelectListItem>? Categ { get; set; }
         public string Title { get; set; }
-
+        public bool isApproved { get; set; } = false;
         public string Description { get; set; }
 
         public int Price { get; set; }

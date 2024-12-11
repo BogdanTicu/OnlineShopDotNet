@@ -26,24 +26,76 @@ namespace OnlineShop12.Controllers
         
         public IActionResult Index()
         {
-            var products = _db.Products.Include("Category");
-            //var products = from prod in _db.Products
-            //                 select prod;
+            if(User.IsInRole("Admin"))
+            {
+                var products = _db.Products.Include("Category");
+                      
 
-            ViewBag.Products = products;
+                ViewBag.Products = products;
 
-            return View();
+                return View();
+            }
+            else
+            {
+                var products = _db.Products.Include("Category")
+                          .Where(prod => prod.isApproved);
+                //var products = from prod in _db.Products
+                //                 select prod;
+                ViewBag.Products = products;
+
+                return View();
+            }
+           
         }
 
-        public IActionResult Show(int id)
+        public IActionResult Aproba(int id)
         {
-            Product product = _db.Products.Include("Category").Include("Reviews")
+            if(User.IsInRole("Admin"))
+            {
+                Product product = _db.Products.Include("Category").Include("Reviews")
                              .Where(prod => prod.Id_Product == id)
                              .First();
-            Console.WriteLine(product.Id_Product);
-            ViewBag.Products = product;
-            
-            return View(product);
+                product.isApproved = true;
+                ViewBag.Products = product;
+
+                _db.SaveChanges();
+
+                return RedirectToAction("Index") ;
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+        public IActionResult Show(int id)
+        {
+            if (User.IsInRole("Admin"))
+            {
+                ViewBag.EsteAdmin = 1;
+                Product product = _db.Products.Include("Category").Include("Reviews")
+                             .Where(prod => prod.Id_Product == id)
+                             .First();
+                Console.WriteLine(product.Id_Product);
+                ViewBag.Products = product;
+
+                return View(product);
+            }
+            else
+            {
+                ViewBag.EsteAdmin = 0;
+                ViewBag.EsteColaborator = 0;
+                if(User.IsInRole("Colaborator"))
+                {
+                    ViewBag.EsteColaborator = 1;
+                }
+                Product product = _db.Products.Include("Category").Include("Reviews")
+                             .Where(prod => prod.Id_Product == id)
+                             .First();
+                Console.WriteLine(product.Id_Product);
+                ViewBag.Products = product;
+
+                return View(product);
+            }
         }
 
         [HttpPost]
@@ -75,18 +127,12 @@ namespace OnlineShop12.Controllers
                 return View(prod);
             }
         }
-
+        [Authorize(Roles ="Colaborator")]
         public IActionResult New()
         {
            
-            /* ASTA MERGE la fel de prost ca si ce am scris mai jos
-            var categories = _db.Categories.ToList();
-
-            // Trimite lista de categorii la View folosind ViewBag
-            ViewBag.Categories = categories;*/
             Product product = new Product();
             product.Categ = GetAllCategories();
-           // Console.Write(product.Categ);
             ViewBag.Product = product;
             return View(product);
         }
@@ -116,7 +162,7 @@ namespace OnlineShop12.Controllers
                   
         }
 
-
+        [Authorize(Roles ="Colaborator")]
         public IActionResult Edit(int id)
         {
             Product product = _db.Products.Include("Category")
@@ -139,6 +185,7 @@ namespace OnlineShop12.Controllers
                 prod.Title = requestProd.Title;
                 prod.Description = requestProd.Description;
                 prod.Id_Category = requestProd.Id_Category;
+                prod.isApproved = false;
                 //TempData["message"] = "Articolul a fost modificat";
                 _db.SaveChanges();
                 return RedirectToAction("Index");

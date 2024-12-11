@@ -40,7 +40,7 @@ namespace OnlineShop12.Models
 
     new IdentityRole
     {
-        Id = "2c5e174e-3b0e-446f-86af-483d56fd7211", Name = "Editor", NormalizedName = "Editor".ToUpper() },
+        Id = "2c5e174e-3b0e-446f-86af-483d56fd7211", Name = "Colaborator", NormalizedName = "Colaborator".ToUpper() },
 
     new IdentityRole
     {
