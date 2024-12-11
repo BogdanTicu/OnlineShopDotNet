@@ -37,7 +37,7 @@ namespace OnlineShop12.Controllers
 
         public IActionResult Show(int id)
         {
-            Product product = _db.Products.Include("Category").Include("Reviews")
+            Product product = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
                              .Where(prod => prod.Id_Product == id)
                              .First();
             Console.WriteLine(product.Id_Product);
@@ -69,6 +69,37 @@ namespace OnlineShop12.Controllers
                 }
                 Product prod = _db.Products.Include("Category").Include("Reviews")
                               .Where(prod => prod.Id_Product == review.Id_Product)
+                              .First();
+                ViewBag.Products = prod;
+
+                return View(prod);
+            }
+        }
+
+
+        [HttpPost]
+        public IActionResult Show2([FromForm] Rating rating)
+        {
+            rating.Date = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.Write(error.ErrorMessage);
+                }
+                _db.Ratings.Add(rating);
+                _db.SaveChanges();
+                return Redirect("/Products/Show/" + rating.Id_Product);
+            }
+
+            else
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.Write(error.ErrorMessage);
+                }
+                Product prod = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
+                              .Where(prod => prod.Id_Product == rating.Id_Product)
                               .First();
                 ViewBag.Products = prod;
 
