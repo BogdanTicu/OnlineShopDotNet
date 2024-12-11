@@ -4,7 +4,14 @@
 <br />
 
 <form asp-action="Edit" asp-controller="Ratings" asp-route-id="@Model.Id_Rating" method="post">
+    <div class="form-group">
+        <label asp-for="Value" class="form-label">Scor rating</label>
+        <br />
+        <textarea asp-for="Value" class="form-control"></textarea>
+        <span asp-validation-for="Value" class="text-danger"></span>
+    </div>
 
+    <br /><br />
 
 
     <button class="btn btn-primary" type="submit">Editează rating</button>

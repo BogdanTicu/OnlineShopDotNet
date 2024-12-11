@@ -11,7 +11,7 @@ namespace OnlineShop12.Models
 
         public int? Id_Product { get; set; }
         public virtual Product? Product { get; set; }
-        public virtual ApplicationUser User { get; set; }
+        public virtual ApplicationUser? User { get; set; }
 
         public DateTime Date {get; set; }
 

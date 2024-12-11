@@ -19,7 +19,8 @@
 <label>Stocul produsului</label>
 <p>@ViewBag.Products.Stock</p>
 
-
+<label>Scorul produsului</label>
+<p>@ViewBag.Products.Score</p>
 
 <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
     <button type="submit">Sterge produsul</button>
@@ -124,47 +125,102 @@
 </div>
 
 
+@* Afisarea formularului in care se poate adauga un rating *@
 
-<div class="container-wrapper">  
-  <div class="container d-flex align-items-center justify-content-center">
-    <div class="row justify-content-center">    
+
+
+     <div class="col-md-2"></div>
+
         <form method="post" asp-controller="Products" asp-action="Show2">
+           <div class="card-body">
 
-      <!-- star rating -->
-      <div class="rating-wrapper">
+             <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
+             <label>Rate us</label>
+                <div class="rating d-flex align-items-center">
+                    <!-- Steaua 1 -->
+                    <input type="radio" class="btn-check" name="Value" id="rating-1" value="1" />
+                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-1">
+                        <i class="bi bi-star-fill"></i>
+                    </label>
 
-        <!-- star 5 -->
-        <input type="radio" id="5-star-rating" name="star-rating" value="5">
-        <label for="5-star-rating" class="star-rating">
-          <i class="fas fa-star d-inline-block"></i>
-        </label>
+                    <!-- Steaua 2 -->
+                    <input type="radio" class="btn-check" name="Value" id="rating-2" value="2" />
+                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-2">
+                        <i class="bi bi-star-fill"></i>
+                    </label>
 
-         <!-- star 4 -->
-        <input type="radio" id="4-star-rating" name="star-rating" value="4">
-        <label for="4-star-rating" class="star-rating star">
-          <i class="fas fa-star d-inline-block"></i>
-        </label>
+                    <!-- Steaua 3 -->
+                    <input type="radio" class="btn-check" name="Value" id="rating-3" value="3" />
+                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-3">
+                        <i class="bi bi-star-fill"></i>
+                    </label>
 
-         <!-- star 3 -->
-        <input type="radio" id="3-star-rating" name="star-rating" value="3">
-        <label for="3-star-rating" class="star-rating star">
-          <i class="fas fa-star d-inline-block"></i>
-        </label>
+                    <!-- Steaua 4 -->
+                    <input type="radio" class="btn-check" name="Value" id="rating-4" value="4" />
+                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-4">
+                        <i class="bi bi-star-fill"></i>
+                    </label>
 
-        <!-- star 2 -->
-        <input type="radio" id="2-star-rating" name="star-rating" value="2">
-        <label for="2-star-rating" class="star-rating star">
-          <i class="fas fa-star d-inline-block"></i>
-        </label>
+                    <!-- Steaua 5 -->
+                    <input type="radio" class="btn-check" name="Value" id="rating-5" value="5" />
+                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-5">
+                        <i class="bi bi-star-fill"></i>
+                    </label>
+                </div>
+                </div>
+                <button class="btn btn-success " type="submit">Adauga rating</button>
+               </form>
+        <div class="col-md-2"></div>
+             
+@* Afisare ratings impreuna cu butoanele de editare si stergere *@
+              
+@foreach (var rat in Model.Ratings)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
 
-        <!-- star 1 -->
-        <input type="radio" id="1-star-rating" name="star-rating" value="1">
-        <label for="1-star-rating" class="star-rating star">
-          <i class="fas fa-star d-inline-block"></i>
-        </label>
+            <div class="col-md-8">
 
-       </div>
-       </form>
+                <div>
+
+                    <p>@rat.Value</p>
+                    <small>@rat.Date</small>
+
+                </div>
+                <br>
+
+                <div class="d-flex">
+
+                    <div>
+
+                        <a class="btn btn-outline-primary" asp-controller="Ratings" asp-action="Edit" asp-route-id="@rat.Id_Rating">
+                            <i class="bi bi-pencil-square"></i> Editeaza
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <form method="post" asp-controller="Ratings" asp-action="Delete" asp-route-id="@rat.Id_Rating">
+
+                            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <br />
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
     </div>
-  </div>
-</div>
+}
+               
+

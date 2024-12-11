@@ -22,9 +22,9 @@ namespace OnlineShop12.Models
 
         public int Stock { get; set; }
 
-        public int? Score { get; set; }
+        public double? Score { get; set; }
 
-        public virtual ApplicationUser User { get; set; }
+        public virtual ApplicationUser? User { get; set; }
         public virtual ICollection<Rating>? Ratings { get; set; }
         public virtual ICollection<Review>? Reviews { get; set; }
         public virtual ICollection<OrderProduct>? OrderProducts { get; set; }

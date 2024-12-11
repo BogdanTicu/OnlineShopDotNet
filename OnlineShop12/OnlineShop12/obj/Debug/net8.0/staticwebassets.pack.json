@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\bianc\\Source\\Repos\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\image\\Empty_Star.svg.png",
+      "PackagePath": "staticwebassets\\image\\Empty_Star.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\bianc\\Source\\Repos\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\image\\full-star.png",
+      "PackagePath": "staticwebassets\\image\\full-star.png"
+    },
+    {
       "Id": "C:\\Users\\bianc\\Source\\Repos\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
