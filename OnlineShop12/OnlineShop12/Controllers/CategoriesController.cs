@@ -2,20 +2,35 @@
 using OnlineShop12.Models;
 using OnlineShop12.Data;
 using System;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace OnlineShop12.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
 
         private readonly ApplicationDbContext _db;
-
-        public CategoriesController(ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public CategoriesController(ApplicationDbContext context, UserManager<ApplicationUser> userManager,
+        RoleManager<IdentityRole> roleManager)
         {
             _db = context;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
+
+        
         public IActionResult Index()
         {
+            /*
+            if(TempData.ContainsKey("message"))
+            {
+                ViewBag.message = TempData["message"].ToString();
+            }
+            */
             var categories = from categ in _db.Categories
                              select categ;
 
