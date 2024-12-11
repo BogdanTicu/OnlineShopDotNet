@@ -19,12 +19,25 @@
 <label>Stocul produsului</label>
 <p>@ViewBag.Products.Stock</p>
 
+@if(ViewBag.EsteAdmin==1)
+{
+    <label>E aprobat?</label>
+    <p>@ViewBag.Products.isApproved</p>
+    <form method="post" asp-controller="Products" asp-action="Aproba" asp-route-id="@Model.Id_Product">
+        <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Aproba</button>
+
+    </form>
+}
 
 
-<form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
-    <button type="submit">Sterge produsul</button>
+@if(ViewBag.EsteColaborator==1)
+{
+    <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
+        <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge produsul</button>
 
-</form>
+    </form>
+}
+
 
 <br />
 
