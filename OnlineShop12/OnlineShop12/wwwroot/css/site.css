@@ -44,25 +44,25 @@ a.nav-link {
         color: #00b894 !important;
     }
 
-/* Stilul pentru stele (inițial gri) */
+
 .rating-star i {
-    font-size: 2rem; /* Dimensiune stea */
-    color: gold; /* Culoare implicită */
-    transition:  0.3s ease; /* Tranziție pentru culoare */
+    font-size: 2rem; 
+    color: gold; 
+    transition:  0.3s ease; 
 }
 
-/* Efectul de hover: toate stelele din stânga acelei stele vor deveni galbene */
+
 .rating-star:hover i{
     color:goldenrod;
 }
 .rating-star:hover ~ .rating-star i {
-    color: lightgray; /* Culoare galbenă pentru stelele pe care treci cu mouse-ul */
+    color: lightgray; 
 }
 
-/* Culoarea stelelor selectate (când utilizatorul face click) */
+
 .btn-check:checked + .rating-star i,
 .btn-check:checked + .rating-star ~ .rating-star i {
-    color: gold; /* Culoare galbenă pentru stelele selectate */
+    color: gold; 
 }
 
 
