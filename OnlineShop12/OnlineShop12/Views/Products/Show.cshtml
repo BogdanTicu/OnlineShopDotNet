@@ -19,7 +19,7 @@
 <label>Stocul produsului</label>
 <p>@ViewBag.Products.Stock</p>
 
-@if(ViewBag.EsteAdmin==1)
+@if(ViewBag.EsteAdmin)
 {
     <label>E aprobat?</label>
     <p>@ViewBag.Products.isApproved</p>
@@ -30,7 +30,7 @@
 }
 
 
-@if(ViewBag.EsteColaborator==1)
+@if(ViewBag.EsteColaborator)
 {
     <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
         <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge produsul</button>
@@ -61,30 +61,33 @@
 
                 </div>
                 <br>
+                @if (User.Identity.IsAuthenticated && rev.Id_User ==ViewBag.UserCurent)
+                {
+                    <div class="d-flex">
 
-                <div class="d-flex">
+                        <div>
 
-                    <div>
+                            <a class="btn btn-outline-primary" asp-controller="Reviews" asp-action="Edit" asp-route-id="@rev.Id_Review">
+                                <i class="bi bi-pencil-square"></i> Editeaza
+                            </a>
 
-                        <a class="btn btn-outline-primary" asp-controller="Reviews" asp-action="Edit" asp-route-id="@rev.Id_Review">
-                            <i class="bi bi-pencil-square"></i> Editeaza
-                        </a>
+                        </div>
+
+                        <div>
+
+                            <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@rev.Id_Review">
+
+                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+
+                            </form>
+
+                        </div>
 
                     </div>
 
-                    <div>
-
-                        <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@rev.Id_Review">
-
-                            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-                <br />
+                    <br />
+                }
+                
 
             </div>
 
@@ -97,42 +100,45 @@
 
 
 @* Afisarea formularului in care se poate adauga o recenzie *@
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container">
 
-<div class="container">
+        <div class="row">
 
-    <div class="row">
+            <div class="col-md-2"></div>
 
-        <div class="col-md-2"></div>
+            <div class="col-md-8">
 
-        <div class="col-md-8">
+                <div class="card">
 
-            <div class="card">
+                    <form method="post" asp-controller="Products" asp-action="Show">
 
-                <form method="post" asp-controller="Products" asp-action="Show">
+                        <div class="card-body">
 
-                    <div class="card-body">
+                            <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
 
-                        <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
+                            <label>Continut recenzie</label>
+                            <br />
 
-                        <label>Continut recenzie</label>
-                        <br />
+                            <textarea class="form-control" name="Content"></textarea>
 
-                        <textarea class="form-control" name="Content"></textarea>
-                        
-                        <br /><br />
-                        <button class="btn btn-success " type="submit">Adauga recenzia</button>
+                            <br /><br />
+                            <button class="btn btn-success " type="submit">Adauga recenzia</button>
 
-                    </div>
+                        </div>
 
-                </form>
+                    </form>
+
+                </div>
 
             </div>
 
+            <div class="col-md-2"></div>
+
         </div>
 
-        <div class="col-md-2"></div>
-
     </div>
+}
 
-</div>
 

@@ -71,18 +71,19 @@ namespace OnlineShop12.Controllers
         {
             if (User.IsInRole("Admin"))
             {
-                ViewBag.EsteAdmin = 1;
+                
                 Product product = _db.Products.Include("Category").Include("Reviews")
                              .Where(prod => prod.Id_Product == id)
                              .First();
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
 
+                SetAccessRights();
                 return View(product);
             }
             else
             {
-                ViewBag.EsteAdmin = 0;
+                
                 ViewBag.EsteColaborator = 0;
                 if(User.IsInRole("Colaborator"))
                 {
@@ -93,7 +94,7 @@ namespace OnlineShop12.Controllers
                              .First();
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
-
+                SetAccessRights();
                 return View(product);
             }
         }
@@ -102,6 +103,7 @@ namespace OnlineShop12.Controllers
         public IActionResult Show([FromForm] Review review)
         {
             review.Date = DateTime.Now;
+            review.Id_User = _userManager.GetUserId(User);
             if (ModelState.IsValid)
             {
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
@@ -110,6 +112,7 @@ namespace OnlineShop12.Controllers
                 }
                 _db.Reviews.Add(review);
                 _db.SaveChanges();
+                SetAccessRights();
                 return Redirect("/Products/Show/" + review.Id_Product);
             }
 
@@ -123,7 +126,7 @@ namespace OnlineShop12.Controllers
                               .Where(prod => prod.Id_Product == review.Id_Product)
                               .First();
                 ViewBag.Products = prod;
-
+                SetAccessRights();
                 return View(prod);
             }
         }
@@ -224,7 +227,20 @@ namespace OnlineShop12.Controllers
             return RedirectToAction("Index");
             
         }
-        
+        private void SetAccessRights()
+        {
+            ViewBag.AfisareButoane = false;
+
+            if (User.IsInRole("Colaborator"))
+            {
+                ViewBag.AfisareButoane = true;
+            }
+
+            ViewBag.UserCurent = _userManager.GetUserId(User);
+
+            ViewBag.EsteAdmin = User.IsInRole("Admin");
+            ViewBag.EsteColaborator = User.IsInRole("Colaborator");
+        }
         [NonAction]
         public IEnumerable<SelectListItem> GetAllCategories()
         {
