@@ -69,13 +69,23 @@ namespace OnlineShop12.Controllers
         }
         public IActionResult Show(int id)
         {
+            
             if (User.IsInRole("Admin"))
             {
                 
-                Product product = _db.Products.Include("Category").Include("Reviews")
-            Product product = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
+                //Product product = _db.Products.Include("Category").Include("Reviews")
+                Product product = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
                              .Where(prod => prod.Id_Product == id)
                              .First();
+                if (product != null && product.Ratings.Any())
+                {
+                    // Calculăm media ratingurilor
+                    double averageRating = product.Ratings.Average(r => r.Value);
+                    product.Score = Math.Round(averageRating, 1); // Opțional, rotunjire la o zecimală
+
+                    // Poți adăuga media calculată în ViewBag sau ca o proprietate a modelului
+                    ViewBag.AverageRating = product.Score;
+                }
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
 
@@ -93,26 +103,22 @@ namespace OnlineShop12.Controllers
                 Product product = _db.Products.Include("Category").Include("Reviews")
                              .Where(prod => prod.Id_Product == id)
                              .First();
+                //Console.WriteLine(product.Id_Product);
+                if (product != null && product.Ratings.Any())
+                {
+                    // Calculăm media ratingurilor
+                    double averageRating = product.Ratings.Average(r => r.Value);
+                    product.Score = Math.Round(averageRating, 1); // Opțional, rotunjire la o zecimală
+
+                    // Poți adăuga media calculată în ViewBag sau ca o proprietate a modelului
+                    ViewBag.AverageRating = product.Score;
+                }
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
                 SetAccessRights();
                 return View(product);
             }
-        }
 
-            Console.WriteLine(product.Id_Product);
-            if (product != null && product.Ratings.Any())
-            {
-                // Calculăm media ratingurilor
-                double averageRating = product.Ratings.Average(r => r.Value);
-                product.Score = Math.Round(averageRating, 1); // Opțional, rotunjire la o zecimală
-
-                // Poți adăuga media calculată în ViewBag sau ca o proprietate a modelului
-                ViewBag.AverageRating = product.Score;
-            }
-            ViewBag.Products = product;
-            
-            return View(product);
         }
 
         [HttpPost]
