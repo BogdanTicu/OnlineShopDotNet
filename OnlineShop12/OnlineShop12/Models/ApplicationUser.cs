@@ -9,7 +9,8 @@ namespace OnlineShop12.Models
         // un user poate posta mai multe reviews
         public virtual ICollection<Review>? Reviews { get; set; }
 
-        // un user poate da mai multe ratinguri TODO
+        // un user poate da mai multe ratinguri (TODO)
+        public virtual ICollection<Rating>? Ratings { get; set; }
 
         public string? Phone { get; set; }
     }

@@ -73,6 +73,7 @@ namespace OnlineShop12.Controllers
             {
                 
                 Product product = _db.Products.Include("Category").Include("Reviews")
+            Product product = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
                              .Where(prod => prod.Id_Product == id)
                              .First();
                 Console.WriteLine(product.Id_Product);
@@ -97,6 +98,21 @@ namespace OnlineShop12.Controllers
                 SetAccessRights();
                 return View(product);
             }
+        }
+
+            Console.WriteLine(product.Id_Product);
+            if (product != null && product.Ratings.Any())
+            {
+                // Calculăm media ratingurilor
+                double averageRating = product.Ratings.Average(r => r.Value);
+                product.Score = Math.Round(averageRating, 1); // Opțional, rotunjire la o zecimală
+
+                // Poți adăuga media calculată în ViewBag sau ca o proprietate a modelului
+                ViewBag.AverageRating = product.Score;
+            }
+            ViewBag.Products = product;
+            
+            return View(product);
         }
 
         [HttpPost]
@@ -130,6 +146,31 @@ namespace OnlineShop12.Controllers
                 return View(prod);
             }
         }
+
+
+        [HttpPost]
+        public IActionResult Show2([FromForm] Rating rating)
+        {
+            rating.Date = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                _db.Ratings.Add(rating);
+                _db.SaveChanges();
+                return Redirect("/Products/Show/" + rating.Id_Product);
+            }
+
+            else
+            {
+                Product prod = _db.Products.Include("Category").Include("Ratings")
+                             .Where(prod => prod.Id_Product == rating.Id_Product)
+                             .First();
+
+                ViewBag.Products = prod;
+
+                return View(prod);
+            }
+        }
+
         [Authorize(Roles ="Colaborator")]
         public IActionResult New()
         {

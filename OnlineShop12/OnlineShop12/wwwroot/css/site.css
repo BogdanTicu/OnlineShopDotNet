@@ -1,4 +1,4 @@
-
+﻿
 html {
     font-size: 14px;
 }
@@ -43,3 +43,27 @@ a.nav-link {
     .logoutbtn:hover {
         color: #00b894 !important;
     }
+
+
+.rating-star i {
+    font-size: 2rem; 
+    color: gold; 
+    transition:  0.3s ease; 
+}
+
+
+.rating-star:hover i{
+    color:goldenrod;
+}
+.rating-star:hover ~ .rating-star i {
+    color: lightgray; 
+}
+
+
+.btn-check:checked + .rating-star i,
+.btn-check:checked + .rating-star ~ .rating-star i {
+    color: gold; 
+}
+
+
+

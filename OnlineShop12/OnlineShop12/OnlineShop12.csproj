@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Views\OrderProducts\" />
-    <Folder Include="Views\Ratings\" />
     <Folder Include="Views\Payments\" />
   </ItemGroup>
 

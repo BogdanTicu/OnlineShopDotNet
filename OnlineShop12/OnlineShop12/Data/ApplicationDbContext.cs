@@ -63,7 +63,8 @@ namespace OnlineShop12.Data
             modelBuilder.Entity<Rating>()
           .HasOne<Product>(a => a.Product)
           .WithMany(c => c.Ratings)
-          .HasForeignKey(a => a.Id_Product);
+          .HasForeignKey(a => a.Id_Product)
+          .OnDelete(DeleteBehavior.Cascade);
 
 
             modelBuilder.Entity<Payment>()

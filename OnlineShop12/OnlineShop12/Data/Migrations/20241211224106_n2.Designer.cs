@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineShop12.Data;
 
@@ -11,9 +12,11 @@ using OnlineShop12.Data;
 namespace OnlineShop12.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241211224106_n2")]
+    partial class n2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -350,9 +353,6 @@ namespace OnlineShop12.Data.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("isApproved")
-                        .HasColumnType("bit");
-
                     b.HasKey("Id_Product");
 
                     b.HasIndex("Id_Category");
@@ -412,8 +412,8 @@ namespace OnlineShop12.Data.Migrations
                     b.Property<int?>("Id_Product")
                         .HasColumnType("int");
 
-                    b.Property<string>("Id_User")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Id_User")
+                        .HasColumnType("int");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
