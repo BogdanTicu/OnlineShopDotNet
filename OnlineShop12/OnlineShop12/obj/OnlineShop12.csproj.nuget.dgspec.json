@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {}
+    "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {}
   },
   "projects": {
-    "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {
+    "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
+        "projectUniqueName": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
         "projectName": "OnlineShop12",
-        "projectPath": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
+        "projectPath": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\obj\\",
+        "outputPath": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
