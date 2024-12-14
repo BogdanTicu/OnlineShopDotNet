@@ -3,16 +3,24 @@ using OnlineShop12.Models;
 using OnlineShop12.Data;
 using Azure.Core;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.AspNetCore.Identity;
 
 namespace OnlineShop12.Controllers
 {
     public class ReviewsController : Controller
     {
         private readonly ApplicationDbContext _db;
-
-        public ReviewsController(ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public ReviewsController(
+        ApplicationDbContext context,
+        UserManager<ApplicationUser> userManager,
+        RoleManager<IdentityRole> roleManager
+        )
         {
             _db = context;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
         //public IActionResult Index()
         //{
