@@ -76,8 +76,8 @@ namespace OnlineShop12.Controllers
                 //Product product = _db.Products.Include("Category").Include("Reviews")
                 Product product = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
                              .Where(prod => prod.Id_Product == id)
-                             .First();
-                if (product != null && product.Ratings.Any())
+                              .FirstOrDefault(prod => prod.Id_Product == id);
+                if (product != null && product.Ratings.Count()!=0)
                 {
                     // Calculăm media ratingurilor
                     double averageRating = product.Ratings.Average(r => r.Value);
@@ -85,6 +85,11 @@ namespace OnlineShop12.Controllers
 
                     // Poți adăuga media calculată în ViewBag sau ca o proprietate a modelului
                     ViewBag.AverageRating = product.Score;
+                }
+                else if(product.Ratings.Count()==0)
+                {
+                    product.Score = 0;
+                    ViewBag.AverageRating = 0;
                 }
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
@@ -100,11 +105,11 @@ namespace OnlineShop12.Controllers
                 {
                     ViewBag.EsteColaborator = 1;
                 }
-                Product product = _db.Products.Include("Category").Include("Reviews")
+                Product product = _db.Products.Include("Category").Include("Reviews").Include("Ratings")
                              .Where(prod => prod.Id_Product == id)
-                             .First();
+                             .FirstOrDefault(prod => prod.Id_Product == id); ;
                 //Console.WriteLine(product.Id_Product);
-                if (product != null && product.Ratings.Any())
+                if (product != null && product.Ratings.Count()!=0)
                 {
                     // Calculăm media ratingurilor
                     double averageRating = product.Ratings.Average(r => r.Value);
@@ -112,6 +117,11 @@ namespace OnlineShop12.Controllers
 
                     // Poți adăuga media calculată în ViewBag sau ca o proprietate a modelului
                     ViewBag.AverageRating = product.Score;
+                }
+                else if (product.Ratings.Count() == 0)
+                {
+                    product.Score = 0;
+                    ViewBag.AverageRating = 0;
                 }
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
