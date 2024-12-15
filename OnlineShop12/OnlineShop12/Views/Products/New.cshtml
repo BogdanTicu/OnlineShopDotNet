@@ -1,11 +1,17 @@
 ﻿@model OnlineShop12.Models.Product;
 
 <h2>Formular adaugare produse</h2>
-<form method="post" action="/Products/New">
+<form method="post" action="/Products/New" enctype="multipart/form-data">
     
     <label>Denumire produs</label>
     <input type="text" name="Title" />
     <br />
+
+    <div class="form-group">
+        <label for="imageFile">Upload Imagine</label>
+        <input type="file" class="form-control" name="imageFile" id="imageFile" />
+    </div>
+
 
     <label>Descriere produs</label>
     <input type="text" name="Description" />

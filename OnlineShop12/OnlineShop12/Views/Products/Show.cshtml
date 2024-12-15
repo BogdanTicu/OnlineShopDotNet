@@ -6,6 +6,16 @@
 <label>Titlul produsului</label>
 <p>@ViewBag.Products.Title</p>
 
+@if (!string.IsNullOrEmpty(@ViewBag.Products.ImagePath))
+{
+    <img src="@Url.Content(@ViewBag.Products.ImagePath)" alt="@ViewBag.Products.Title" style="width: 150px; height: auto;" />
+}
+else
+{
+    <p>No image available</p>
+}
+
+<br/>
 
 <label>Descrierea produsului</label>
 <p>@ViewBag.Products.Description</p>

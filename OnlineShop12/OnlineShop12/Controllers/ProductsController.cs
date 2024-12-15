@@ -197,30 +197,71 @@ namespace OnlineShop12.Controllers
             return View(product);
         }
 
+        //[HttpPost]
+        //public IActionResult New(Product product)
+        //{
+        //    //Console.WriteLine($"Id_Category: {product.Id_Category}");
+        //    product.Categ = GetAllCategories();
+        //    //Console.Write(product.Categ);
+        //    if (ModelState.IsValid)
+        //    {
+        //        _db.Products.Add(product);
+        //        _db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+        //    {
+        //        Console.Write(error.ErrorMessage);
+        //    }
+
+        //   // ViewBag.Product = product;
+        //    //else { ViewBag.Products=product;
+        //    //       return View(product); }
+        //    return View(product);
+                     
+                  
+        //}
+
         [HttpPost]
-        public IActionResult New(Product product)
+        public async Task<IActionResult> New(Product product, IFormFile? imageFile)
         {
-            //Console.WriteLine($"Id_Category: {product.Id_Category}");
             product.Categ = GetAllCategories();
-            //Console.Write(product.Categ);
+
             if (ModelState.IsValid)
             {
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    // Salvarea fișierului
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products");
+                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    // Creează folderul dacă nu există
+                    if (!Directory.Exists(uploadsFolder))
+                        Directory.CreateDirectory(uploadsFolder);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(fileStream);
+                    }
+
+                    // Setează calea imaginii
+                    product.ImagePath = $"/images/products/{uniqueFileName}";
+                }
+
                 _db.Products.Add(product);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
+
             foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
             {
                 Console.Write(error.ErrorMessage);
             }
 
-           // ViewBag.Product = product;
-            //else { ViewBag.Products=product;
-            //       return View(product); }
             return View(product);
-                     
-                  
         }
+
 
         [Authorize(Roles ="Colaborator")]
         public IActionResult Edit(int id)
@@ -235,27 +276,77 @@ namespace OnlineShop12.Controllers
             return View(product);
         }
 
-        [HttpPost]
-        public IActionResult Edit(int id, Product requestProd)
-        {
-            Product prod = _db.Products.Find(id);
-           // requestProd.Categ = GetAllCategories();
-            if (ModelState.IsValid)
+        //[HttpPost]
+        //public IActionResult Edit(int id, Product requestProd)
+        //{
+        //    Product prod = _db.Products.Find(id);
+        //   // requestProd.Categ = GetAllCategories();
+        //    if (ModelState.IsValid)
+        //    {
+        //        prod.Title = requestProd.Title;
+        //        prod.Description = requestProd.Description;
+        //        prod.Id_Category = requestProd.Id_Category;
+        //        prod.isApproved = false;
+        //        //TempData["message"] = "Articolul a fost modificat";
+        //        _db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    else
+        //    {
+        //        requestProd.Categ = GetAllCategories();
+
+        //        return View(requestProd);
+        //    }
+
+
+            [HttpPost]
+            public async Task<IActionResult> Edit(int id, Product requestProd, IFormFile? imageFile)
             {
-                prod.Title = requestProd.Title;
-                prod.Description = requestProd.Description;
-                prod.Id_Category = requestProd.Id_Category;
-                prod.isApproved = false;
-                //TempData["message"] = "Articolul a fost modificat";
-                _db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            else
-            {
+                Product prod = _db.Products.Find(id);
                 requestProd.Categ = GetAllCategories();
+
+                if (ModelState.IsValid)
+                {
+                    prod.Title = requestProd.Title;
+                    prod.Description = requestProd.Description;
+                    prod.Id_Category = requestProd.Id_Category;
+                    prod.isApproved = false;
+
+                    if (imageFile != null && imageFile.Length > 0)
+                    {
+                        // Șterge imaginea veche
+                        if (!string.IsNullOrEmpty(prod.ImagePath))
+                        {
+                            var oldImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", prod.ImagePath.TrimStart('/'));
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+
+                        // Salvează imaginea nouă
+                        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products");
+                        var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
+                        var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await imageFile.CopyToAsync(fileStream);
+                        }
+
+                        prod.ImagePath = $"/images/products/{uniqueFileName}";
+                    }
+
+                    _db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
 
                 return View(requestProd);
             }
+
+
+
+
 
             //try
             //{
@@ -269,21 +360,49 @@ namespace OnlineShop12.Controllers
             //{
             //    return RedirectToAction("Edit", prod.Id_Product);
             //}
-        }
+        
+
+        //[HttpPost]
+        //public ActionResult Delete(int id)
+        //{
+        //    Product prod = _db.Products.Find(id);
+        //    //Review review = _db.Reviews.Find(id);
+        //    //Console.WriteLine(prod.Id_Product);
+        //    _db.Products.Remove(prod);
+
+        //    _db.SaveChanges();
+
+        //    return RedirectToAction("Index");
+            
+       // }
+
 
         [HttpPost]
-        public ActionResult Delete(int id)
+        public IActionResult Delete(int id)
         {
             Product prod = _db.Products.Find(id);
-            //Review review = _db.Reviews.Find(id);
-            //Console.WriteLine(prod.Id_Product);
-            _db.Products.Remove(prod);
 
-            _db.SaveChanges();
+            if (prod != null)
+            {
+                // Șterge imaginea asociată
+                if (!string.IsNullOrEmpty(prod.ImagePath))
+                {
+                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", prod.ImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(imagePath))
+                    {
+                        System.IO.File.Delete(imagePath);
+                    }
+                }
+
+                _db.Products.Remove(prod);
+                _db.SaveChanges();
+            }
 
             return RedirectToAction("Index");
-            
         }
+
+
+
         private void SetAccessRights()
         {
             ViewBag.AfisareButoane = false;

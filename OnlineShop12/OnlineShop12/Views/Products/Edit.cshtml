@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-6 offset-3">
 
-            <form method="post" asp-action="Edit" asp-controller="Products" asp-route-id="@Model.Id_Product">
+            <form method="post" asp-action="Edit" asp-controller="Products" asp-route-id="@Model.Id_Product" enctype="multipart/form-data">
                 <!--
                     Metoda 2 prin care se trimite id-ul catre Controller
                 <input type="hidden" asp-for="Id" />  -->
@@ -24,6 +24,11 @@
                     <span asp-validation-for="Title" class="text-danger"></span>
 
                     <br /><br />
+                </div>
+
+                <div class="form-group">
+                    <label for="imageFile">Adauga Imagine</label>
+                    <input type="file" class="form-control" name="imageFile" id="imageFile" />
                 </div>
 
                 <div class="form-group">
