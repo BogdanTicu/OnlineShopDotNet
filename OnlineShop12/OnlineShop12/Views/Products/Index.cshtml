@@ -6,6 +6,15 @@
     
     <div class="card">
     <p>@prod.Title</p>
+        @if (!string.IsNullOrEmpty(prod.ImagePath))
+        {
+            <img src="@Url.Content(prod.ImagePath)" alt="@prod.Title" style="width: 150px; height: auto;" />
+        }
+        else
+        {
+            <p>No image available</p>
+        }
+
 
     <br />
     <a href="/Products/Show/@prod.Id_Product">Afisare produs</a>
