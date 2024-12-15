@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using OnlineShop12.Data;
 using OnlineShop12.Models;
 
@@ -7,10 +8,17 @@ namespace OnlineShop12.Controllers
     public class RatingsController : Controller
     {
         private readonly ApplicationDbContext _db;
-
-        public RatingsController(ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public RatingsController(
+        ApplicationDbContext context,
+        UserManager<ApplicationUser> userManager,
+        RoleManager<IdentityRole> roleManager
+        )
         {
             _db = context;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         [HttpPost]

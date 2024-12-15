@@ -21,11 +21,21 @@
 
 @if(ViewBag.EsteAdmin)
 {
-    <label>E aprobat?</label>
-    <p>@ViewBag.Products.isApproved</p>
-    <form method="post" asp-controller="Products" asp-action="Aproba" asp-route-id="@Model.Id_Product">
-        <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Aproba</button>
-    </form>
+    @if(@Model.isApproved==false)
+    {
+        <label>Cerere de adaugare/editare</label>
+        <form method="post" asp-controller="Products" asp-action="Aproba" asp-route-id="@Model.Id_Product">
+            <button class="btn btn-outline-danger" type="submit"><i ></i>Aproba</button>
+        </form>
+    }
+    @if(@Model.isDeleted)
+    {
+        <label>Cerere de stergere</label>
+        <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
+            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Aproba stergere</button>
+        </form>
+    }
+
 }
 @if (ViewBag.EsteColaborator)
 {
@@ -159,50 +169,53 @@
 @* Afisarea formularului in care se poate adauga un rating *@
 
 
-
-     
-
+@if (User.Identity.IsAuthenticated)
+{
+    var userRating = Model.Ratings.FirstOrDefault(rat => rat.Id_User == ViewBag.UserCurent);
+    @if (userRating == null)
+    {
         <form method="post" asp-controller="Products" asp-action="Show2">
-           
 
-             <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
-             <label>Rate us</label>
-                <div class="rating d-flex align-items-center">
-                    
-                    <input type="radio" class="btn-check" name="Value" id="rating-1" value="1" />
-                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-1">
-                        <i class="bi bi-star-fill"></i>
-                    </label>
+            <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
+            <label>Rate us</label>
+            <div class="rating d-flex align-items-center">
 
-                    
-                    <input type="radio" class="btn-check" name="Value" id="rating-2" value="2" />
-                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-2">
-                        <i class="bi bi-star-fill"></i>
-                    </label>
+                <input type="radio" class="btn-check" name="Value" id="rating-1" value="1" />
+                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-1">
+                    <i class="bi bi-star-fill"></i>
+                </label>
 
-                    
-                    <input type="radio" class="btn-check" name="Value" id="rating-3" value="3" />
-                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-3">
-                        <i class="bi bi-star-fill"></i>
-                    </label>
 
-                    
-                    <input type="radio" class="btn-check" name="Value" id="rating-4" value="4" />
-                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-4">
-                        <i class="bi bi-star-fill"></i>
-                    </label>
+                <input type="radio" class="btn-check" name="Value" id="rating-2" value="2" />
+                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-2">
+                    <i class="bi bi-star-fill"></i>
+                </label>
 
-                    
-                    <input type="radio" class="btn-check" name="Value" id="rating-5" value="5" />
-                    <label class="btn btn-outline-warning btn-sm rating-star" for="rating-5">
-                        <i class="bi bi-star-fill"></i>
-                    </label>
-                </div>
-                
-                <button class="btn btn-success " type="submit">Adauga rating</button>
-               </form>
-        <div class="col-md-2"></div>
-             
+
+                <input type="radio" class="btn-check" name="Value" id="rating-3" value="3" />
+                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-3">
+                    <i class="bi bi-star-fill"></i>
+                </label>
+
+
+                <input type="radio" class="btn-check" name="Value" id="rating-4" value="4" />
+                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-4">
+                    <i class="bi bi-star-fill"></i>
+                </label>
+
+
+                <input type="radio" class="btn-check" name="Value" id="rating-5" value="5" />
+                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-5">
+                    <i class="bi bi-star-fill"></i>
+                </label>
+            </div>
+
+
+            <button class="btn btn-success " type="submit">Adauga rating</button>
+        </form>
+    }
+    <div class="col-md-2"></div>
+}   
 @* Afisare ratings impreuna cu butoanele de editare si stergere *@
               
 
@@ -232,22 +245,24 @@
                 </div>
                 <br>
 
-                <div class="d-flex">
-                    <div>
-                        <a class="btn btn-outline-primary" asp-controller="Ratings" asp-action="Edit" asp-route-id="@rat.Id_Rating">
-                            <i class="bi bi-pencil-square"></i> Editeaza
-                        </a>
-                    </div>
+                @if (User.Identity.IsAuthenticated && rat.Id_User == ViewBag.UserCurent)
+                {
+                        <div class="d-flex">
+                        <div>
+                            <a class="btn btn-outline-primary" asp-controller="Ratings" asp-action="Edit" asp-route-id="@rat.Id_Rating">
+                                <i class="bi bi-pencil-square"></i> Editeaza
+                            </a>
+                        </div>
 
-                    <div>
-                        <form method="post" asp-controller="Ratings" asp-action="Delete" asp-route-id="@rat.Id_Rating">
-                            <button class="btn btn-outline-danger" type="submit">
-                                <i class="bi bi-trash"></i> Sterge
-                            </button>
-                        </form>
+                        <div>
+                            <form method="post" asp-controller="Ratings" asp-action="Delete" asp-route-id="@rat.Id_Rating">
+                                <button class="btn btn-outline-danger" type="submit">
+                                    <i class="bi bi-trash"></i> Sterge
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-
+                }
                 <br />
             </div>
 

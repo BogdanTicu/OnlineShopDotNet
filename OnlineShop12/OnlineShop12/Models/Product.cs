@@ -16,6 +16,7 @@ namespace OnlineShop12.Models
         public IEnumerable<SelectListItem>? Categ { get; set; }
         public string Title { get; set; }
         public bool isApproved { get; set; } = false;
+        public bool isDeleted { get; set; }
         public string Description { get; set; }
 
         public int Price { get; set; }
@@ -23,7 +24,7 @@ namespace OnlineShop12.Models
         public int Stock { get; set; }
 
         public double? Score { get; set; }
-
+        public string? ImageURL { get; set; }
         public virtual ApplicationUser? User { get; set; }
         public virtual ICollection<Rating>? Ratings { get; set; }
         public virtual ICollection<Review>? Reviews { get; set; }

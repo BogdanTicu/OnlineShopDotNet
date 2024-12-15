@@ -38,7 +38,7 @@ namespace OnlineShop12.Controllers
             else
             {
                 var products = _db.Products.Include("Category")
-                          .Where(prod => prod.isApproved);
+                          .Where(prod => prod.isApproved && !prod.isDeleted);
                 //var products = from prod in _db.Products
                 //                 select prod;
                 ViewBag.Products = products;
@@ -54,6 +54,7 @@ namespace OnlineShop12.Controllers
             {
                 Product product = _db.Products.Include("Category").Include("Reviews")
                              .Where(prod => prod.Id_Product == id)
+                   
                              .First();
                 product.isApproved = true;
                 ViewBag.Products = product;
@@ -168,6 +169,7 @@ namespace OnlineShop12.Controllers
         public IActionResult Show2([FromForm] Rating rating)
         {
             rating.Date = DateTime.Now;
+            rating.Id_User = _userManager.GetUserId(User);
             if (ModelState.IsValid)
             {
                 _db.Ratings.Add(rating);
@@ -182,7 +184,7 @@ namespace OnlineShop12.Controllers
                              .First();
 
                 ViewBag.Products = prod;
-
+                SetAccessRights();
                 return View(prod);
             }
         }
@@ -202,6 +204,8 @@ namespace OnlineShop12.Controllers
         {
             //Console.WriteLine($"Id_Category: {product.Id_Category}");
             product.Categ = GetAllCategories();
+            product.isDeleted = false;
+            product.isApproved = false;
             //Console.Write(product.Categ);
             if (ModelState.IsValid)
             {
@@ -277,12 +281,21 @@ namespace OnlineShop12.Controllers
             Product prod = _db.Products.Find(id);
             //Review review = _db.Reviews.Find(id);
             //Console.WriteLine(prod.Id_Product);
-            _db.Products.Remove(prod);
-
-            _db.SaveChanges();
-
-            return RedirectToAction("Index");
+            if(User.IsInRole("Admin"))
+            {
+                
+                _db.Products.Remove(prod);
+                _db.SaveChanges();
+            }
+            else if(User.IsInRole("Colaborator"))
+            {
+                prod.isDeleted = true;
+                _db.SaveChanges();
+            }
             
+            
+            return RedirectToAction("Index");
+
         }
         private void SetAccessRights()
         {
