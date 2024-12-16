@@ -228,11 +228,12 @@ namespace OnlineShop12.Controllers
         public async Task<IActionResult> New(Product product, IFormFile? imageFile)
         {
             product.Categ = GetAllCategories();
-            product.isDeleted = false;
-            product.isApproved = false;
+            
             //Console.Write(product.Categ);
             if (ModelState.IsValid)
             {
+               // product.isDeleted = false;
+               // product.isApproved = false;
                 if (imageFile != null && imageFile.Length > 0)
                 {
                     // Salvarea fișierului
@@ -389,33 +390,28 @@ namespace OnlineShop12.Controllers
             //Console.WriteLine(prod.Id_Product);
             if(User.IsInRole("Admin"))
             {
-                
-                _db.Products.Remove(prod);
-                _db.SaveChanges();
+                if (prod != null)
+                {
+                    // Șterge imaginea asociată
+                    if (!string.IsNullOrEmpty(prod.ImagePath))
+                    {
+                        var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", prod.ImagePath.TrimStart('/'));
+                        if (System.IO.File.Exists(imagePath))
+                        {
+                            System.IO.File.Delete(imagePath);
+                        }
+                    }
+
+                    _db.Products.Remove(prod);
+                    _db.SaveChanges();
+                }
             }
             else if(User.IsInRole("Colaborator"))
             {
                 prod.isDeleted = true;
                 _db.SaveChanges();
             }
-            
-            
-
-            if (prod != null)
-            {
-                // Șterge imaginea asociată
-                if (!string.IsNullOrEmpty(prod.ImagePath))
-                {
-                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", prod.ImagePath.TrimStart('/'));
-                    if (System.IO.File.Exists(imagePath))
-                    {
-                        System.IO.File.Delete(imagePath);
-                    }
-                }
-
-                _db.Products.Remove(prod);
-                _db.SaveChanges();
-            }
+           
 
             return RedirectToAction("Index");
         }

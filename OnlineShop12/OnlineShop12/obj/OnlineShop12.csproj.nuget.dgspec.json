@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {}
+    "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {
+    "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
+        "projectUniqueName": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
         "projectName": "OnlineShop12",
-        "projectPath": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
-        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\obj\\",
+        "projectPath": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

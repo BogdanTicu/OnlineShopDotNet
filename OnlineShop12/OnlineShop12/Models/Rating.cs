@@ -7,7 +7,7 @@ namespace OnlineShop12.Models
         [Key]
         public int Id_Rating { get; set; }
 
-        public string? Id_User { get; set; }
+        public string? Id_User { get; set; } = string.Empty;
 
         public int? Id_Product { get; set; }
         public virtual Product? Product { get; set; }

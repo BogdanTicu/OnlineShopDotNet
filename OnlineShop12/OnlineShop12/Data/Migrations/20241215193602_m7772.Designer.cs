@@ -12,8 +12,8 @@ using OnlineShop12.Data;
 namespace OnlineShop12.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241214194055_n100")]
-    partial class n100
+    [Migration("20241215193602_m7772")]
+    partial class m7772
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -337,6 +337,9 @@ namespace OnlineShop12.Data.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
@@ -354,6 +357,9 @@ namespace OnlineShop12.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("isApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDeleted")
                         .HasColumnType("bit");
 
                     b.HasKey("Id_Product");
@@ -379,8 +385,8 @@ namespace OnlineShop12.Data.Migrations
                     b.Property<int?>("Id_Product")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id_User")
-                        .HasColumnType("int");
+                    b.Property<string>("Id_User")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");

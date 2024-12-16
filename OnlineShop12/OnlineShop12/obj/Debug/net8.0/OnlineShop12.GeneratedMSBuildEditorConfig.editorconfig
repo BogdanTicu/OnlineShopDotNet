@@ -17,119 +17,119 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineShop12
 build_property.RootNamespace = OnlineShop12
-build_property.ProjectDir = C:\Users\bianc\source\repos\OnlineShopDotNet\OnlineShopDotNet\OnlineShop12\OnlineShop12\
+build_property.ProjectDir = D:\FMI DR\FMI DRIVE\Anul2\DAW\OnlineShopDAW\OnlineShopDotNet\OnlineShop12\OnlineShop12\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\bianc\source\repos\OnlineShopDotNet\OnlineShopDotNet\OnlineShop12\OnlineShop12
+build_property.MSBuildProjectDirectory = D:\FMI DR\FMI DRIVE\Anul2\DAW\OnlineShopDAW\OnlineShopDotNet\OnlineShop12\OnlineShop12
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/Edit.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/Index.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/New.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xOZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/Show.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Categories/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Home/Index.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Home/Privacy.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/Edit.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/Index.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/New.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE5ldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/Show.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Orders/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/Edit.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/Index.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/New.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/Show.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Products/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Ratings/Edit.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Ratings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Reviews/Edit.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Reviews/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/Error.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/_LoginPartial.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/_ViewImports.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/_ViewStart.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bianc/source/repos/OnlineShopDotNet/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/_Layout.cshtml]
+[D:/FMI DR/FMI DRIVE/Anul2/DAW/OnlineShopDAW/OnlineShopDotNet/OnlineShop12/OnlineShop12/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-64r4qrl54a
