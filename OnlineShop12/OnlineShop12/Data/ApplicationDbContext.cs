@@ -11,6 +11,8 @@ namespace OnlineShop12.Data
             : base(options)
         {
         }
+       
+       
         public DbSet<Category> Categories { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Rating> Ratings { get; set; }

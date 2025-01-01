@@ -29,6 +29,16 @@ else
 <label>Stocul produsului</label>
 <p>@ViewBag.Products.Stock</p>
 
+@if(User.Identity.IsAuthenticated)
+{
+    <form asp-controller="Orders" asp-action="AddToCart" method="post">
+        <input type="hidden" name="productId" value="@Model.Id_Product" />
+        <label for="quantity">Cantitate:</label>
+        <input type="number" name="quantity" value="1" min="1" max="@Model.Stock" />
+        <button type="submit" class="btn btn-primary">Adaugă în coș</button>
+    </form>
+}
+
 @if(ViewBag.EsteAdmin)
 {
     @if(@Model.isApproved==false)

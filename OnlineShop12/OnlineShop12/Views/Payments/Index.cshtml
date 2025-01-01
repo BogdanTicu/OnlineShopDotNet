@@ -1,0 +1,39 @@
+﻿@model OnlineShop12.Models.Payment
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+
+            <form method="post" asp-action="PlaceOrder" asp-controller="Orders" enctype="multipart/form-data">
+                <!--
+                    Metoda 2 prin care se trimite id-ul catre Controller
+                <input type="hidden" asp-for="Id" />  -->
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Method" class="form-label">Metoda plata</label>
+                    <br />
+                    <input asp-for="Method" class="form-control" />
+
+                    <span asp-validation-for="Method" class="text-danger"></span>
+
+                    <br /><br />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Address" class="form-label">Adresa de livrare</label>
+                    <br />
+                    <textarea asp-for="Address" class="form-control"></textarea>
+
+                    <span asp-validation-for="Address" class="text-danger"></span>
+
+                    <br /><br />
+                </div>
+
+                <button class="btn btn-sm btn-success" type="submit">Plaseaza comanda</button>
+
+            </form>
+        </div>
+    </div>
+</div>

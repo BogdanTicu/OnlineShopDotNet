@@ -1,0 +1,32 @@
+﻿@model IEnumerable<OnlineShop12.Models.Order>
+
+<h2>Comenzile mele</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Produse</th>
+            <th>Suma totală</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.Id_Order</td>
+                <td>
+                    <ul>
+                        @foreach (var orderProduct in order.OrderProducts)
+                        {
+                            <li>@orderProduct.Product.Title (@orderProduct.Product.Price RON)</li>
+                        }
+                    </ul>
+                </td>
+                <td>@order.Total_Amount RON</td>
+                <td>@order.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

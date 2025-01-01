@@ -1,17 +1,59 @@
-﻿<h2>Afisare comenzi</h2>
-<br />
+﻿@model OnlineShop12.Models.Order
 
-@foreach (var ord in ViewBag.Orders)
+
+<h2>Coșul tău</h2>
+
+@if (Model != null && Model.OrderProducts != null && Model.OrderProducts.Any())
+
 {
-    <p>@ord.Id_Order</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Produs</th>
+                <th>Cantitate</th>
+                <th>Pret</th>
+                <th>Total</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderProducts)
+            {
+                <tr>
+                    <td>@item.Product.Title</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Price</td>
+                    <td>@(item.Quantity * item.Product.Price)</td>
+                    <td>
+                        <form asp-action="RemoveFromCart" asp-route-productId="@item.Id_Product" method="post">
+                            <button class="btn btn-danger">Șterge</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
-    <br />
-    <a href="/Orders/Show/@ord.Id_Order">Afisare comanda</a>
-    <br />
-    <a href="/Orders/Edit/@ord.Id_Order">Editare comanda</a>
-    <hr />
+    <h3>Total: @Model.Total_Amount RON</h3>
+
+    <form asp-action="Index" asp-controller="Payments" method="get">
+        <button class="btn btn-success">Plasează comanda</button>
+    </form>
+
+    <form method="get" asp-action="MyOrders" asp-controller="Orders">
+        <button type="submit" class="btn btn-primary">
+            Vezi comenzile
+        </button>
+    </form>
 
 }
+else
+{
+    <p>Coșul tău este gol.</p>
+    <form method="get" asp-action="MyOrders" asp-controller="Orders">
+        <button type="submit" class="btn btn-primary">
+            Vezi comenzile
+        </button>
+    </form>
 
-<a href="/Orders/New">Adaugare comanda</a>
-<br />
+}

@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\images\\products\\78540067-2386-4aa1-8495-6f32a0bb3488_GShockWatch.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\78540067-2386-4aa1-8495-6f32a0bb3488_GShockWatch.jpg"
+    },
+    {
+      "Id": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\images\\products\\d1bf0b1c-ecea-4de4-9f26-9220adde9807_GShockWatch.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\d1bf0b1c-ecea-4de4-9f26-9220adde9807_GShockWatch.jpg"
+    },
+    {
       "Id": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShopDAW\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
