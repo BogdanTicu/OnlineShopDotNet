@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace OnlineShop12.Models
 {
@@ -13,5 +15,8 @@ namespace OnlineShop12.Models
         public virtual ICollection<Rating>? Ratings { get; set; }
 
         public string? Phone { get; set; }
+        //rolurile unui user
+        [NotMapped]
+        public IEnumerable<SelectListItem>? AllRoles { get; set; }
     }
 }

@@ -23,6 +23,7 @@ namespace OnlineShop12.Controllers
             _userManager = userManager;
             _roleManager = roleManager;
         }
+        [Authorize(Roles ="Admin,Colaborator,User")]
         public IActionResult Index()
         {
 
@@ -128,7 +129,6 @@ namespace OnlineShop12.Controllers
                 .FirstOrDefault(o => o.UserId == userId && o.Status == "In cos");
 
             payment.Id_Order = cartOrder.Id_Order;
-            payment.Id_Payment = new Random().Next(1,10000);
             payment.Order_Date = DateTime.Now;
             if (cartOrder == null)
             {
