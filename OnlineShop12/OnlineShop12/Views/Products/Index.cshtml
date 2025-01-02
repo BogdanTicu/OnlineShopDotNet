@@ -1,5 +1,32 @@
-﻿<h2>Afisare produse</h2>
+﻿<br/>
+
+<h2>Afisare produse</h2>
 <br />
+
+<form method="GET">
+    <div class="input-group mb-3">
+        <!-- Input pentru căutare -->
+        <input type="text" class="form-control" placeholder="Search topics or keywords" name="search" value="@ViewBag.SearchString">
+
+        <!-- Dropdown cu butoane -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort by
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="?search=@ViewBag.SearchString&sortBy=price_asc">Price: Low to High</a></li>
+                <li><a class="dropdown-item" href="?search=@ViewBag.SearchString&sortBy=price_desc">Price: High to Low</a></li>
+                <li><a class="dropdown-item" href="?search=@ViewBag.SearchString&sortBy=score_asc">Score: Low to High</a></li>
+                <li><a class="dropdown-item" href="?search=@ViewBag.SearchString&sortBy=score_desc">Score: High to Low</a></li>
+            </ul>
+        </div>
+
+        <!-- Buton de submit -->
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </div>
+</form>
+
+
 
 @foreach (var prod in ViewBag.Products)
 {
@@ -25,5 +52,28 @@
 }
 
 <a href="/Products/New">Adaugare produs</a>
+
+<div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="@ViewBag.PaginationBaseUrl=1" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+
+            @for (int i = 1; i <= ViewBag.lastPage; i++)
+            {
+                <li class="page-item"> <a class="page-link" href="@ViewBag.PaginationBaseUrl=@i">@(i)</a> </li>
+            }
+
+            <li class="page-item">
+                <a class="page-link" href="@ViewBag.PaginationBaseUrl=@(ViewBag.lastPage)" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
 <br />
 

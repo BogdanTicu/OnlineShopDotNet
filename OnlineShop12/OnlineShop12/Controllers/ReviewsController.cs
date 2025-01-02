@@ -22,28 +22,7 @@ namespace OnlineShop12.Controllers
             _userManager = userManager;
             _roleManager = roleManager;
         }
-        //public IActionResult Index()
-        //{
-        //    var reviews = from rev in _db.Reviews
-        //                 select rev;
-
-        //    ViewBag.Reviews = reviews;
-
-        //    return View();
-        //}
-        //public ActionResult Show(int id)
-        //{
-        //    Review rev = _db.Reviews.Find(id);
-
-        //    ViewBag.Review = rev;
-
-        //    return View();
-        //}
-
-        //public IActionResult New()
-        //{
-        //    return View();
-        //}
+       
 
         [HttpPost]
         public IActionResult New(Review rev)

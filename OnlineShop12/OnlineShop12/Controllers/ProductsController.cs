@@ -29,25 +29,121 @@ namespace OnlineShop12.Controllers
             if(User.IsInRole("Admin"))
             {
                 var products = _db.Products.Include("Category");
-                      
-
-                ViewBag.Products = products;
-
-                return View();
+                return AfisarePaginata(products);
             }
             else
             {
                 var products = _db.Products.Include("Category")
                           .Where(prod => prod.isApproved && !prod.isDeleted);
-                //var products = from prod in _db.Products
-                //                 select prod;
-                ViewBag.Products = products;
 
-                return View();
+                
+                return AfisarePaginata(products);
             }
-           
         }
+        public IActionResult AfisarePaginata(IQueryable<Product>? products)
+        {
+            var search = "";
+            var sortBy = HttpContext.Request.Query["sortBy"];
+            if (Convert.ToString(HttpContext.Request.Query["search"]) != null)
+            {
+                search = Convert.ToString(HttpContext.Request.Query["search"]).Trim(); // eliminam spatiile libere 
 
+                // Cautare in produs (Titlu si Descriere)
+
+                List<int> productIds = _db.Products.Where
+                                        (
+                                         at => at.Title.Contains(search)
+                                         || at.Description.Contains(search)
+                                        ).Select(a => a.Id_Product).ToList();
+
+                // Cautare in reviews
+                List<int> productIdsOfReviewsWithSearchString = _db.Reviews
+                                        .Where
+                                        (
+                                         c => c.Content.Contains(search)
+                                        ).Select(c => (int)c.Id_Product).ToList();
+
+                // Se formeaza o singura lista formata din toate id-urile selectate anterior
+                List<int> mergedIds = productIds.Union(productIdsOfReviewsWithSearchString).ToList();
+
+
+                // Lista articolelor care contin cuvantul cautat
+                // fie in produs -> Title si Content
+                // fie in review -> Content
+                products = _db.Products.Where(prod => mergedIds.Contains(prod.Id_Product))
+                                      .Include("Category")
+                                      .Include("User");
+
+                if (!string.IsNullOrEmpty(sortBy))
+                {
+                    if(sortBy == "price_asc")
+                    {
+                        products = products.OrderBy(p => p.Price);
+                    }
+                    else if(sortBy == "price_desc")
+                    {
+                        products = products.OrderByDescending(p => p.Price);
+                    }
+                    else if(sortBy == "score_asc")
+                    {
+                        products = products.OrderBy(p => p.Score);
+                    }
+                    else if(sortBy == "score_desc")
+                    {
+                        products = products.OrderByDescending(p => p.Score);
+                    }
+                }
+            }
+
+            ViewBag.SearchString = search;
+            // AFISARE PAGINATA
+
+            // Alegem sa afisam 3 articole pe pagina
+            int _perPage = 3;
+
+            // Fiind un numar variabil de articole, verificam de fiecare data utilizand 
+            // metoda Count()
+
+            int totalItems = products.Count();
+
+            // Se preia pagina curenta din View-ul asociat
+            // Numarul paginii este valoarea parametrului page din ruta
+            // /Articles/Index?page=valoare
+
+            var currentPage = Convert.ToInt32(HttpContext.Request.Query["page"]);
+
+            // Pentru prima pagina offsetul o sa fie zero
+            // Pentru pagina 2 o sa fie 3 
+            // Asadar offsetul este egal cu numarul de articole care au fost deja afisate pe paginile anterioare
+            var offset = 0;
+
+            // Se calculeaza offsetul in functie de numarul paginii la care suntem
+            if (!currentPage.Equals(0))
+            {
+                offset = (currentPage - 1) * _perPage;
+            }
+
+            // Se preiau articolele corespunzatoare pentru fiecare pagina la care ne aflam 
+            // in functie de offset
+            var paginatedProducts = products.Skip(offset).Take(_perPage);
+
+
+            // Preluam numarul ultimei pagini
+            ViewBag.lastPage = Math.Ceiling((float)totalItems / (float)_perPage);
+
+            // Trimitem articolele cu ajutorul unui ViewBag catre View-ul corespunzator
+            ViewBag.Products = paginatedProducts;
+            if (search != "")
+            {
+                ViewBag.PaginationBaseUrl = "/Products/Index/?search=" + search + "&page";
+            }
+            else
+            {
+                ViewBag.PaginationBaseUrl = "/Products/Index/?page";
+            }
+            ViewBag.SortBy = sortBy;
+            return View("Index", "Products"); 
+        }
         public IActionResult Aproba(int id)
         {
             if(User.IsInRole("Admin"))
@@ -92,6 +188,7 @@ namespace OnlineShop12.Controllers
                     product.Score = 0;
                     ViewBag.AverageRating = 0;
                 }
+                _db.SaveChanges();
                 Console.WriteLine(product.Id_Product);
                 ViewBag.Products = product;
 
@@ -125,6 +222,7 @@ namespace OnlineShop12.Controllers
                     ViewBag.AverageRating = 0;
                 }
                 Console.WriteLine(product.Id_Product);
+                _db.SaveChanges();
                 ViewBag.Products = product;
                 SetAccessRights();
                 return View(product);
@@ -199,31 +297,6 @@ namespace OnlineShop12.Controllers
             return View(product);
         }
 
-        //[HttpPost]
-        //public IActionResult New(Product product)
-        //{
-        //    //Console.WriteLine($"Id_Category: {product.Id_Category}");
-        //    product.Categ = GetAllCategories();
-        //    //Console.Write(product.Categ);
-        //    if (ModelState.IsValid)
-        //    {
-        //        _db.Products.Add(product);
-        //        _db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-        //    {
-        //        Console.Write(error.ErrorMessage);
-        //    }
-
-        //   // ViewBag.Product = product;
-        //    //else { ViewBag.Products=product;
-        //    //       return View(product); }
-        //    return View(product);
-                     
-                  
-        //}
-
         [HttpPost]
         public async Task<IActionResult> New(Product product, IFormFile? imageFile)
         {
@@ -268,7 +341,7 @@ namespace OnlineShop12.Controllers
         }
 
 
-        [Authorize(Roles ="Colaborator")]
+        [Authorize(Roles ="Colaborator,Admin")]
         public IActionResult Edit(int id)
         {
             Product product = _db.Products.Include("Category")
@@ -280,28 +353,6 @@ namespace OnlineShop12.Controllers
 
             return View(product);
         }
-
-        //[HttpPost]
-        //public IActionResult Edit(int id, Product requestProd)
-        //{
-        //    Product prod = _db.Products.Find(id);
-        //   // requestProd.Categ = GetAllCategories();
-        //    if (ModelState.IsValid)
-        //    {
-        //        prod.Title = requestProd.Title;
-        //        prod.Description = requestProd.Description;
-        //        prod.Id_Category = requestProd.Id_Category;
-        //        prod.isApproved = false;
-        //        //TempData["message"] = "Articolul a fost modificat";
-        //        _db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    else
-        //    {
-        //        requestProd.Categ = GetAllCategories();
-
-        //        return View(requestProd);
-        //    }
 
 
             [HttpPost]
@@ -316,7 +367,10 @@ namespace OnlineShop12.Controllers
                     prod.Description = requestProd.Description;
                     prod.Id_Category = requestProd.Id_Category;
                     prod.isApproved = false;
-
+                    if(User.IsInRole("Admin"))
+                    {
+                        prod.isApproved = true;
+                    }
                     if (imageFile != null && imageFile.Length > 0)
                     {
                         // Șterge imaginea veche
@@ -348,38 +402,6 @@ namespace OnlineShop12.Controllers
 
                 return View(requestProd);
             }
-
-
-
-
-
-            //try
-            //{
-            //    prod.Title = requestProd.Title;
-
-            //    _db.SaveChanges();
-
-            //    return RedirectToAction("Index");
-            //}
-            //catch (Exception)
-            //{
-            //    return RedirectToAction("Edit", prod.Id_Product);
-            //}
-        
-
-        //[HttpPost]
-        //public ActionResult Delete(int id)
-        //{
-        //    Product prod = _db.Products.Find(id);
-        //    //Review review = _db.Reviews.Find(id);
-        //    //Console.WriteLine(prod.Id_Product);
-        //    _db.Products.Remove(prod);
-
-        //    _db.SaveChanges();
-
-        //    return RedirectToAction("Index");
-            
-       // }
 
 
         [HttpPost]
@@ -453,19 +475,6 @@ namespace OnlineShop12.Controllers
                     Text = category.Category_Name
                 });
             }
-            /* Sau se poate implementa astfel: 
-             * 
-            foreach (var category in categories)
-            {
-                var listItem = new SelectListItem();
-                listItem.Value = category.Id.ToString();
-                listItem.Text = category.CategoryName;
-
-                selectList.Add(listItem);
-             }
-            */
-
-            // returnam lista de categorii
             return selectList;
         }
         

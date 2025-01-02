@@ -100,17 +100,7 @@ namespace OnlineShop12.Controllers
         }
 
         [Authorize]
-        /*public IActionResult MyOrders()
-        {
-            var userId = _userManager.GetUserId(User);
-            var orders = _db.Orders
-                .Include(o => o.OrderProducts)
-                .ThenInclude(op => op.Product)
-                .Where(o => o.UserId == userId && o.Status == "Plasat");
-                
-
-            return View(orders); 
-        }*/
+        
         public IActionResult MyOrders()
         {
             var userId = _userManager.GetUserId(User);
