@@ -29,6 +29,7 @@ namespace OnlineShop12.Controllers
             if(User.IsInRole("Admin"))
             {
                 var products = _db.Products.Include("Category");
+                SetAccessRights();
                 return AfisarePaginata(products);
             }
             else
@@ -36,7 +37,7 @@ namespace OnlineShop12.Controllers
                 var products = _db.Products.Include("Category")
                           .Where(prod => prod.isApproved && !prod.isDeleted);
 
-                
+                SetAccessRights();
                 return AfisarePaginata(products);
             }
         }
@@ -142,6 +143,7 @@ namespace OnlineShop12.Controllers
                 ViewBag.PaginationBaseUrl = "/Products/Index/?page";
             }
             ViewBag.SortBy = sortBy;
+            SetAccessRights();
             return View("Index", "Products"); 
         }
         public IActionResult Aproba(int id)
@@ -272,6 +274,7 @@ namespace OnlineShop12.Controllers
             {
                 _db.Ratings.Add(rating);
                 _db.SaveChanges();
+                SetAccessRights();
                 return Redirect("/Products/Show/" + rating.Id_Product);
             }
 
@@ -294,6 +297,7 @@ namespace OnlineShop12.Controllers
             Product product = new Product();
             product.Categ = GetAllCategories();
             ViewBag.Product = product;
+            SetAccessRights();
             return View(product);
         }
 
@@ -326,7 +330,7 @@ namespace OnlineShop12.Controllers
                     // Setează calea imaginii
                     product.ImagePath = $"/images/products/{uniqueFileName}";
                 }
-
+                SetAccessRights();
                 _db.Products.Add(product);
                 await _db.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -336,7 +340,7 @@ namespace OnlineShop12.Controllers
             {
                 Console.Write(error.ErrorMessage);
             }
-
+            SetAccessRights();
             return View(product);
         }
 
@@ -350,7 +354,7 @@ namespace OnlineShop12.Controllers
             product.Categ = GetAllCategories();
 
             //ViewBag.Products = prod;
-
+            SetAccessRights();
             return View(product);
         }
 
@@ -358,6 +362,7 @@ namespace OnlineShop12.Controllers
             [HttpPost]
             public async Task<IActionResult> Edit(int id, Product requestProd, IFormFile? imageFile)
             {
+            SetAccessRights();
                 Product prod = _db.Products.Find(id);
                 requestProd.Categ = GetAllCategories();
 
@@ -366,6 +371,8 @@ namespace OnlineShop12.Controllers
                     prod.Title = requestProd.Title;
                     prod.Description = requestProd.Description;
                     prod.Id_Category = requestProd.Id_Category;
+                    prod.Stock = requestProd.Stock;
+                    prod.Price = requestProd.Price;
                     prod.isApproved = false;
                     if(User.IsInRole("Admin"))
                     {

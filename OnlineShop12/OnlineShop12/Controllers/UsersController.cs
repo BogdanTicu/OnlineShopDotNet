@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +23,7 @@ namespace OnlineShop12.Controllers
             _userManager = userManager;
             _roleManager = roleManager;
         }
-
+        [Authorize(Roles ="Admin")]
         public IActionResult Index()
         {
             var users = from user in _db.Users
@@ -30,10 +31,10 @@ namespace OnlineShop12.Controllers
                         select user;
 
             ViewBag.UsersList = users;
-
+            SetAccessRights();
             return View();
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Show(string id)
         {
             ApplicationUser user = _db.Users.Find(id);
@@ -45,7 +46,7 @@ namespace OnlineShop12.Controllers
 
             return View(user);
         }
-        
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Edit(string id)
         {
             ApplicationUser user = _db.Users.Find(id);
@@ -148,6 +149,20 @@ namespace OnlineShop12.Controllers
                 });
             }
             return selectList;
+        }
+        private void SetAccessRights()
+        {
+            ViewBag.AfisareButoane = false;
+
+            if (User.IsInRole("Colaborator"))
+            {
+                ViewBag.AfisareButoane = true;
+            }
+
+            ViewBag.UserCurent = _userManager.GetUserId(User);
+
+            ViewBag.EsteAdmin = User.IsInRole("Admin");
+            ViewBag.EsteColaborator = User.IsInRole("Colaborator");
         }
     }
 }

@@ -25,6 +25,7 @@ namespace OnlineShop12.Controllers
         
         public IActionResult Index()
         {
+            
             /*
             if(TempData.ContainsKey("message"))
             {
@@ -35,7 +36,7 @@ namespace OnlineShop12.Controllers
                              select categ;
 
             ViewBag.Categories = categories;
-
+            SetAccessRights();
             return View();
         }
 
@@ -44,12 +45,13 @@ namespace OnlineShop12.Controllers
             Category categ = _db.Categories.Find(id);
 
             ViewBag.Category = categ;
-
+            SetAccessRights();
             return View();
         }
 
         public IActionResult New()
         {
+            SetAccessRights();
             return View();
         }
         
@@ -71,7 +73,7 @@ namespace OnlineShop12.Controllers
             {
                 Console.Write(error.ErrorMessage);
             }
-
+            SetAccessRights();
             return View(categ);
         }
         [HttpGet]
@@ -86,7 +88,7 @@ namespace OnlineShop12.Controllers
                 }
                 return NotFound();
             }
-
+            SetAccessRights();
             return View(categ); // Trimitem obiectul către View
         }
 
@@ -103,6 +105,7 @@ namespace OnlineShop12.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            SetAccessRights();
             return View(requestCateg);
         }
 
@@ -116,7 +119,20 @@ namespace OnlineShop12.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+        private void SetAccessRights()
+        {
+            ViewBag.AfisareButoane = false;
 
+            if (User.IsInRole("Colaborator"))
+            {
+                ViewBag.AfisareButoane = true;
+            }
+
+            ViewBag.UserCurent = _userManager.GetUserId(User);
+
+            ViewBag.EsteAdmin = User.IsInRole("Admin");
+            ViewBag.EsteColaborator = User.IsInRole("Colaborator");
+        }
     }
 }
     

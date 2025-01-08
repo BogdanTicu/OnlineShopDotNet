@@ -2,3 +2,8 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+document.querySelectorAll('.rating-star').forEach(label => {
+    label.addEventListener('click', function (event) {
+        event.preventDefault(); // Previne saltul în josul paginii
+    });
+});

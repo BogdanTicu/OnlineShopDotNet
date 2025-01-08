@@ -2,19 +2,22 @@
 
 <h2>Formular adaugare produse</h2>
 <form method="post" action="/Products/New" enctype="multipart/form-data">
-    
+    <div asp-validation-summary="All" class="text-danger"></div>
+
     <label>Denumire produs</label>
     <input type="text" name="Title" />
+    <span asp-validation-for="Title" class="text-danger"></span>
     <br />
 
     <div class="form-group">
         <label for="imageFile">Upload Imagine</label>
         <input type="file" class="form-control" name="imageFile" id="imageFile" />
     </div>
-
+    
 
     <label>Descriere produs</label>
     <input type="text" name="Description" />
+    <span asp-validation-for="Description" class="text-danger"></span>
     <br />
 
     <div class="form-group">
@@ -23,16 +26,20 @@
         <select asp-for="Id_Category" asp-items="Model.Categ" class="form-control">
             <option value="">Selectati categoria</option>
         </select>
+
+        <span asp-validation-for="Id_Category" class="text-danger"></span>
         <br />
     </div>
 
 
     <label>Pret produs</label>
     <input type="text" name="Price" />
+    <span asp-validation-for="Price" class="text-danger"></span>
     <br />
 
     <label>Stoc produs</label>
     <input type="text" name="Stock" />
+    <span asp-validation-for="Stock" class="text-danger"></span>
     <br />
 
     <button class="btn btn-succes" type="submit">Adauga produsul</button>

@@ -8,7 +8,7 @@ namespace OnlineShop12.Models
         [Key]
         public int Id_Order { get; set; }
         public string Status { get; set; } = "In cos"; 
-        public int Total_Amount { get; set; }
+        public int? Total_Amount { get; set; }
 
         public DateTime OrderDate { get; set; }
 

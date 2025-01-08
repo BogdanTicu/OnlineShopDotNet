@@ -1,15 +1,19 @@
 ﻿@model OnlineShop12.Models.Category
-
+<div class="container">
 <h2>Editare categorie</h2>
 
 <form asp-action="Edit" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
     <input type="hidden" asp-for="Id_Category" />
 
     <label for="Category_Name">Nume categorie:</label>
     <input asp-for="Category_Name" />
-
+        <span asp-validation-for="Category_Name" class="text-danger"></span>
+    <br />
     <label for="Description">Descriere:</label>
     <input asp-for="Description" />
-
-    <button type="submit">Salvează</button>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    <br />
+    <button class="btn-success"type="submit">Salvează</button>
 </form>

@@ -33,14 +33,18 @@ namespace OnlineShop12.Controllers
                 .Include(o => o.OrderProducts)
                 .ThenInclude(op => op.Product)
                 .FirstOrDefault(o => o.UserId == userId && o.Status == "In cos");
-
+            SetAccessRights();
             return View(order);
         }
+        [Authorize(Roles ="Admin,Colaborator,User")]
         [HttpPost]
         public IActionResult AddToCart(int productId, int quantity = 1)
         {
             var userId = _userManager.GetUserId(User);
-
+            if(!(User.Identity.IsAuthenticated))
+            {
+                RedirectToAction("/Identity/Account/Login");
+            }
             // Găsește comanda "In cos" a utilizatorului
             var existingOrder = _db.Orders
                 .Include(o => o.OrderProducts)
@@ -88,13 +92,10 @@ namespace OnlineShop12.Controllers
                 existingOrder.OrderProducts.Add(orderProduct);
             }
 
-            // Actualizează suma totală
             existingOrder.Total_Amount += product.Price * quantity;
 
-            // Scade din stocul produsului
             product.Stock -= quantity;
 
-            // Salvează modificările
             _db.SaveChanges();
 
             return RedirectToAction("Index","Products");
@@ -115,35 +116,10 @@ namespace OnlineShop12.Controllers
             {
                 return NotFound("No orders found.");
             }
-
+            SetAccessRights();
             return View(orders);
         }
-        [HttpPost]
-        public IActionResult PlaceOrder(Payment payment)
-        {
-            var userId = _userManager.GetUserId(User);
-
-            // Găsește comanda "In cos" a utilizatorului
-            var cartOrder = _db.Orders
-                .Include(o => o.OrderProducts)
-                .FirstOrDefault(o => o.UserId == userId && o.Status == "In cos");
-
-            payment.Id_Order = cartOrder.Id_Order;
-            payment.Order_Date = DateTime.Now;
-            if (cartOrder == null)
-            {
-                return RedirectToAction("Index");
-            }
-
-            // Schimbă statusul comenzii
-            cartOrder.Status = "Plasat";
-
-            // Salvează modificările
-            _db.Payments.Add(payment);
-            _db.SaveChanges();
-
-            return RedirectToAction("MyOrders","Orders");
-        }
+        
         [HttpPost]
         public IActionResult RemoveFromCart(int productId)
         {
@@ -161,6 +137,19 @@ namespace OnlineShop12.Controllers
             }
             return RedirectToAction("Index", "Orders");
         }
-        
+        private void SetAccessRights()
+        {
+            ViewBag.AfisareButoane = false;
+
+            if (User.IsInRole("Colaborator"))
+            {
+                ViewBag.AfisareButoane = true;
+            }
+
+            ViewBag.UserCurent = _userManager.GetUserId(User);
+
+            ViewBag.EsteAdmin = User.IsInRole("Admin");
+            ViewBag.EsteColaborator = User.IsInRole("Colaborator");
+        }
     }
 }

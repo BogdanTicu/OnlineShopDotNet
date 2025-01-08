@@ -1,7 +1,7 @@
 ﻿@model OnlineShop12.Models.Product
-<h2>Editare produs</h2>
+<h2 class="accent">Editare produs</h2>
 
-<h2 class="text-center mt-5">Editare articol</h2>
+
 
 <br />
 
@@ -10,20 +10,48 @@
         <div class="col-md-6 offset-3">
 
             <form method="post" asp-action="Edit" asp-controller="Products" asp-route-id="@Model.Id_Product" enctype="multipart/form-data">
-                <!--
-                    Metoda 2 prin care se trimite id-ul catre Controller
-                <input type="hidden" asp-for="Id" />  -->
+                
 
                 <div asp-validation-summary="All" class="text-danger"></div>
 
                 <div class="form-group">
                     <label asp-for="Title" class="form-label">Titlu Produs</label>
-                    <br />
+                    
                     <input asp-for="Title" class="form-control" />
 
                     <span asp-validation-for="Title" class="text-danger"></span>
 
-                    <br /><br />
+                    
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Description" class="form-label">Descriere Produs</label>
+
+                    <textarea asp-for="Description" class="form-control"></textarea>
+
+                    <span asp-validation-for="Description" class="text-danger"></span>
+
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Stock" class="form-label">Stoc Produs</label>
+
+                    <input asp-for="Stock" class="form-control"/>
+
+                    <span asp-validation-for="Stock" class="text-danger"></span>
+
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Price" class="form-label">Pret Produs</label>
+
+                    <input asp-for="Price" class="form-control"/>
+
+                    <span asp-validation-for="Price" class="text-danger"></span>
+
+
                 </div>
 
                 <div class="form-group">
@@ -31,29 +59,21 @@
                     <input type="file" class="form-control" name="imageFile" id="imageFile" />
                 </div>
 
-                <div class="form-group">
-                    <label asp-for="Description" class="form-label">Descriere Produs</label>
-                    <br />
-                    <textarea asp-for="Description" class="form-control"></textarea>
 
-                    <span asp-validation-for="Description" class="text-danger"></span>
-
-                    <br /><br />
-                </div>
 
                 <div class="form-group">
                     <label for="Id_Category">Selectati categoria</label>
-                    <br />
+                    </div>
+                <div class="form-group">
                     <select asp-for="Id_Category" asp-items="Model.Categ" class="form-control">
                         <option value="">Selectati categoria</option>
                     </select>
 
                     <span asp-validation-for="Id_Category" class="text-danger"></span>
-
-                    <br />
                 </div>
-
-                <button class="btn btn-sm btn-success" type="submit">Modifica produs</button>
+                <br />
+                <br />
+                <button class=" btn-success" type="submit">Modifica produs</button>
 
             </form>
         </div>

@@ -5,7 +5,7 @@
 namespace OnlineShop12.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedRolesAtrToUser : Migration
+    public partial class ValidariPayments : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

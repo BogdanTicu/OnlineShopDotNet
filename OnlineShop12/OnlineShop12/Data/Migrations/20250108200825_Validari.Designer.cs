@@ -12,8 +12,8 @@ using OnlineShop12.Data;
 namespace OnlineShop12.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250102213122_AddedRolesAtrToUser")]
-    partial class AddedRolesAtrToUser
+    [Migration("20250108200825_Validari")]
+    partial class Validari
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -271,7 +271,7 @@ namespace OnlineShop12.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Total_Amount")
+                    b.Property<int?>("Total_Amount")
                         .HasColumnType("int");
 
                     b.Property<string>("UserId")
@@ -352,15 +352,18 @@ namespace OnlineShop12.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
+                    b.Property<int?>("Price")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<double?>("Score")
                         .HasColumnType("float");
 
-                    b.Property<int>("Stock")
+                    b.Property<int?>("Stock")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("Title")

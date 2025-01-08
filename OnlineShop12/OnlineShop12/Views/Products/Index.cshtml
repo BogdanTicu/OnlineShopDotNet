@@ -1,7 +1,7 @@
-﻿<br/>
+﻿
 
-<h2>Afisare produse</h2>
-<br />
+<h2 style="text-align: center; color: #FFE209;">Afisare produse</h2>
+
 
 <form method="GET">
     <div class="input-group mb-3">
@@ -10,7 +10,7 @@
 
         <!-- Dropdown cu butoane -->
         <div class="btn-group">
-            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button" class=" btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Sort by
             </button>
             <ul class="dropdown-menu">
@@ -22,36 +22,41 @@
         </div>
 
         <!-- Buton de submit -->
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class=" btn-outline-primary" type="submit">Search</button>
     </div>
 </form>
 
 
-
+<div class="product-grid">
 @foreach (var prod in ViewBag.Products)
 {
     
     <div class="card">
-    <p>@prod.Title</p>
+    
         @if (!string.IsNullOrEmpty(prod.ImagePath))
         {
-            <img src="@Url.Content(prod.ImagePath)" alt="@prod.Title" style="width: 150px; height: auto;" />
+                <img src="@Url.Content(prod.ImagePath)" alt="@prod.Title" class="card product-image" />
         }
         else
         {
-            <p>No image available</p>
+                <p style="color: #FF6B6B;">No image available</p>
         }
+            <h3>@prod.Title</h3>
 
 
     <br />
-    <a href="/Products/Show/@prod.Id_Product">Afisare produs</a>
+            <a href="/Products/Show/@prod.Id_Product" class="btn btn-secondary">Afisare produs</a>
     <br />
-    <a href="/Products/Edit/@prod.Id_Product">Editare produs</a>
+            <a href="/Products/Edit/@prod.Id_Product" class="btn btn-secondary">Editare produs</a>
     <hr />
     </div>
 }
+</div>
+@if(ViewBag.EsteColaborator)
+{
+    <a href="/Products/New" class="add-product-btn">Adaugare produs</a>
 
-<a href="/Products/New">Adaugare produs</a>
+}
 
 <div>
     <nav aria-label="Page navigation example">

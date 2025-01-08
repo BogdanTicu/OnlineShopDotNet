@@ -1,124 +1,126 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\",
+  "WorkspaceRootPath": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\reviews\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\reviews\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineShop/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208211650_AddUserRoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\categories\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\orders\\myorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\orders\\myorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\categories\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\categories\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\categories\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\categories\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\migrations\\20241203091818_mi98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\migrations\\20241203091818_mi98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\ratings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\ratings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\migrations\\20241203082821_mi40.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\migrations\\20241203082821_mi40.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\onlineshop12.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\onlineshop12.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\migrations\\20241203084242_mi99.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\migrations\\20241203084242_mi99.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\migrations\\20241208213924_m50.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\migrations\\20241208213924_m50.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\migrations\\20241208212056_adduserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\migrations\\20241208212056_adduserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\onlineshopdotnet\\onlineshopdotnet\\onlineshop12\\onlineshop12\\data\\migrations\\20241212202902_addedusersonreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\data\\migrations\\20241212202902_addedusersonreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|c:\\users\\bianc\\source\\repos\\bogdan final\\onlineshopdotnet\\onlineshop12\\onlineshop12\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{657960EB-CD02-4828-A9D3-1ACE7E979539}|OnlineShop12\\OnlineShop12.csproj|solutionrelative:onlineshop12\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -128,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -144,363 +146,381 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "OnlineShop12\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAK0BAAAAAAAAAAAmwMsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:02:09.245Z",
+              "DocumentIndex": 0,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\New.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\New.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\New.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Products\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T12:20:12.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\Index.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "OnlineShop12\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T15:53:48.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-08T21:15:25.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Reviews\\Edit.cshtml",
-              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Reviews\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Reviews\\Edit.cshtml",
-              "RelativeToolTip": "OnlineShop12\\Views\\Reviews\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T14:56:38.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Show.cshtml",
               "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\Show.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Show.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Show.cshtml",
               "RelativeToolTip": "OnlineShop12\\Views\\Products\\Show.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T15:57:44.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Product.cs",
-              "RelativeToolTip": "OnlineShop12\\Models\\Product.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:27:39.936Z",
+              "WhenOpened": "2025-01-07T16:49:42.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Edit.cshtml",
-              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Edit.cshtml",
-              "RelativeToolTip": "OnlineShop12\\Views\\Products\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwB4AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T13:53:35.158Z",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAADwv8IAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T11:12:38.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "New.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\New.cshtml",
-              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\New.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\New.cshtml",
-              "RelativeToolTip": "OnlineShop12\\Views\\Products\\New.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwGoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T11:37:13.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T15:56:53.245Z",
+              "WhenOpened": "2025-01-07T16:34:05.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Rating.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Rating.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Models\\Rating.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Rating.cs",
-              "RelativeToolTip": "OnlineShop12\\Models\\Rating.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:30:33.798Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:13:50.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Review.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Models\\Review.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Review.cs",
-              "RelativeToolTip": "OnlineShop12\\Models\\Review.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:20:40.865Z"
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T16:35:52.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\appsettings.json",
-              "RelativeDocumentMoniker": "OnlineShop12\\appsettings.json",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\appsettings.json",
-              "RelativeToolTip": "OnlineShop12\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-08T16:47:58.907Z"
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T12:07:35.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T16:33:52.96Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\SeedData.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Models\\SeedData.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\SeedData.cs",
-              "RelativeToolTip": "OnlineShop12\\Models\\SeedData.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAIA1wBkAAAAQAAAA",
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T21:01:07.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "20241212202902_AddedUsersOnReview.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241212202902_AddedUsersOnReview.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\Migrations\\20241212202902_AddedUsersOnReview.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241212202902_AddedUsersOnReview.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\Migrations\\20241212202902_AddedUsersOnReview.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:29:02.945Z"
+              "WhenOpened": "2025-01-08T11:35:29.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ReviewsController.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\ReviewsController.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\ReviewsController.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\ReviewsController.cs",
-              "RelativeToolTip": "OnlineShop12\\Controllers\\ReviewsController.cs",
-              "ViewState": "AQIAADAAAAAAzczMzMwUwDoAAABCAAAA",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA0wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:21:11.229Z"
+              "WhenOpened": "2025-01-08T11:13:37.074Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "OnlineShop12\\Controllers\\OrdersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:44:57.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "OnlineShop12\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T20:50:10.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "dbo.AspNetUserRoles.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineShop/True/SqlTable/dbo.AspNetUserRoles.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineShop/True/SqlTable/dbo.AspNetUserRoles.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-11T20:44:40.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAF4AAADgMzMzMzMnwH4AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T21:24:10.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "OnlineShop12\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAACUAAAAAMjMzMzMLwA8AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-08T21:24:03.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Program.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Program.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Program.cs",
-              "RelativeToolTip": "OnlineShop12\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T20:52:13.386Z"
+              "WhenOpened": "2025-01-08T11:02:32.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Category.cs",
-              "RelativeToolTip": "OnlineShop12\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Orders\\Edit.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Orders\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Orders\\Edit.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Orders\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:13:05.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RatingsController.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\RatingsController.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Controllers\\RatingsController.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Controllers\\RatingsController.cs",
+              "RelativeToolTip": "OnlineShop12\\Controllers\\RatingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T21:12:26.061Z"
+              "WhenOpened": "2025-01-08T11:12:37.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T11:04:18.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T11:04:21.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:13:02.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "OnlineShop12\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "OnlineShop12\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-07T16:39:12.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "20241208211650_AddUserRoles.cs",
-              "DocumentMoniker": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208211650_AddUserRoles.cs",
-              "ToolTip": "D:\\FMI DR\\FMI DRIVE\\Anul2\\DAW\\OnlineShop124\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208211650_AddUserRoles.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T21:16:50.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "20241208213924_m50.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208213924_m50.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\Migrations\\20241208213924_m50.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208213924_m50.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\Migrations\\20241208213924_m50.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T21:39:24.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "20241208212056_AddUserRoles.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208212056_AddUserRoles.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\Migrations\\20241208212056_AddUserRoles.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241208212056_AddUserRoles.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\Migrations\\20241208212056_AddUserRoles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T21:20:56.376Z"
+              "Title": "MyOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Orders\\MyOrders.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Orders\\MyOrders.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Orders\\MyOrders.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Orders\\MyOrders.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:14:23.922Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Show.cshtml",
               "RelativeDocumentMoniker": "OnlineShop12\\Views\\Categories\\Show.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Show.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Show.cshtml",
               "RelativeToolTip": "OnlineShop12\\Views\\Categories\\Show.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T16:03:36.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:17:19.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "20241203091818_mi98.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241203091818_mi98.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\Migrations\\20241203091818_mi98.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241203091818_mi98.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\Migrations\\20241203091818_mi98.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:18:19.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "20241203082821_mi40.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241203082821_mi40.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\Migrations\\20241203082821_mi40.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241203082821_mi40.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\Migrations\\20241203082821_mi40.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:28:22.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "20241203084242_mi99.cs",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241203084242_mi99.cs",
-              "RelativeDocumentMoniker": "OnlineShop12\\Data\\Migrations\\20241203084242_mi99.cs",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Data\\Migrations\\20241203084242_mi99.cs",
-              "RelativeToolTip": "OnlineShop12\\Data\\Migrations\\20241203084242_mi99.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:42:42.866Z"
+              "WhenOpened": "2025-01-08T00:12:07.15Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\New.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Categories\\New.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\New.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Categories\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:11:58.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T23:13:23.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Payments\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Payments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Payments\\Index.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Payments\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:14:51.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T17:42:10.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:11:23.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Edit.cshtml",
               "RelativeDocumentMoniker": "OnlineShop12\\Views\\Categories\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\bianc\\source\\repos\\OnlineShopDotNet\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Categories\\Edit.cshtml",
               "RelativeToolTip": "OnlineShop12\\Views\\Categories\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T14:52:04.426Z"
+              "WhenOpened": "2025-01-08T00:11:19.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Ratings\\Edit.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Ratings\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Ratings\\Edit.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Ratings\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T00:01:26.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OnlineShop12.csproj",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
+              "RelativeDocumentMoniker": "OnlineShop12\\OnlineShop12.csproj",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\OnlineShop12.csproj",
+              "RelativeToolTip": "OnlineShop12\\OnlineShop12.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-07T18:13:27.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "OnlineShop12\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "OnlineShop12\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T16:33:50.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Rating.cs",
+              "RelativeDocumentMoniker": "OnlineShop12\\Models\\Rating.cs",
+              "ToolTip": "C:\\Users\\bianc\\source\\repos\\Bogdan final\\OnlineShopDotNet\\OnlineShop12\\OnlineShop12\\Models\\Rating.cs",
+              "RelativeToolTip": "OnlineShop12\\Models\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T10:26:40.548Z"
             }
           ]
         },

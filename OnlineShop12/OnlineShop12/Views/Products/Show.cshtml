@@ -1,27 +1,24 @@
 ﻿@model OnlineShop12.Models.Product
+<div class="product-details">
 
-<h2>Afisare produs</h2>
-<br />
-
-<label>Titlul produsului</label>
-<p>@ViewBag.Products.Title</p>
 
 @if (!string.IsNullOrEmpty(@ViewBag.Products.ImagePath))
 {
-    <img src="@Url.Content(@ViewBag.Products.ImagePath)" alt="@ViewBag.Products.Title" style="width: 150px; height: auto;" />
+        <img src="@Url.Content(@ViewBag.Products.ImagePath)" alt="@ViewBag.Products.Title" class="product-image" />
 }
 else
 {
-    <p>No image available</p>
+        <p style="color: #FF6B6B" ;>No image available</p>
 }
-
+    <h2>@ViewBag.Products.Title</h2>
 <br/>
+    <div class="product-info">
 
 <label>Descrierea produsului</label>
 <p>@ViewBag.Products.Description</p>
 
 <label>Categoria produsului</label>
-<p>@ViewBag.Products.Id_Category</p>
+<p>@ViewBag.Products.Category.Category_Name</p>
 
 <label>Pretul produsului</label>
 <p>@ViewBag.Products.Price</p>
@@ -29,136 +26,140 @@ else
 <label>Stocul produsului</label>
 <p>@ViewBag.Products.Stock</p>
 
-@if(User.Identity.IsAuthenticated)
-{
+    <label>Scorul mediu al produsului</label>
+    <p>
+        @for (int i = 1; i <= 5; i++)
+        {
+            if (i <= @ViewBag.Products.Score)
+            {
+                <i class="bi bi-star-fill text-warning"></i>
+            }
+            else
+            {
+                <i class="bi bi-star text-muted"></i>
+            }
+        }
+        (@ViewBag.Products.Score.ToString("0.0"))
+    </p>
+    </div>
     <form asp-controller="Orders" asp-action="AddToCart" method="post">
         <input type="hidden" name="productId" value="@Model.Id_Product" />
         <label for="quantity">Cantitate:</label>
         <input type="number" name="quantity" value="1" min="1" max="@Model.Stock" />
-        <button type="submit" class="btn btn-primary">Adaugă în coș</button>
+        <button type="submit" class=" btn-primary">Adaugă în coș</button>
     </form>
-}
-
 @if(ViewBag.EsteAdmin)
 {
+     <div class="admin-actions">
     @if(@Model.isApproved==false)
     {
         <label>Cerere de adaugare/editare</label>
         <form method="post" asp-controller="Products" asp-action="Aproba" asp-route-id="@Model.Id_Product">
-            <button class="btn btn-outline-danger" type="submit"><i ></i>Aproba</button>
+            <button class=" btn-success" type="submit"><i ></i>Aproba</button>
         </form>
     }
     @if(@Model.isDeleted)
     {
         <label>Cerere de stergere</label>
         <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
-            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Aproba stergere</button>
+            <button class=" btn-dangerr" type="submit"><i class="bi bi-trash"></i>Aproba stergere</button>
         </form>
     }
+    </div>
 
 }
+    <div class="container">
 @if (ViewBag.EsteColaborator || ViewBag.EsteAdmin)
 {
     <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id_Product">
-        <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge produsul</button>
+        <button class=" btn-danger" type="submit"><i class="bi bi-trash"></i>Sterge produsul</button>
 
     </form>
 }
-
-<label>Scorul mediu al produsului</label>
-<p>
-    @for (int i = 1; i <= 5; i++)
-    {
-        if (i <= @ViewBag.Products.Score)
-        {
-            <i class="bi bi-star-fill text-warning"></i>
-        }
-        else
-        {
-            <i class="bi bi-star text-muted"></i>
-        }
-    }
-    (@ViewBag.Products.Score.ToString("0.0"))
-</p>
+</div>
 
 
 
 
 <br />
 
-<a href="/Products/Index">Afisare produse</a>
+<a href="/Products/Index" class="btn-success">Inapoi la produse</a>
+</div>
 
 
-@* Afisare recenzii impreuna cu butoanele de editare si stergere *@
 
-@foreach (var rev in Model.Reviews)
-{
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
+@* Afisarea formularului in care se poate adauga un rating *@
 
-            <div class="col-md-8">
+<div class="product-details">
 
-                <div>
-
-                    <p>@rev.Content</p>
-                    <small>@rev.Date</small>
-
-                </div>
-                <br>
-                @if (User.Identity.IsAuthenticated && (rev.Id_User ==ViewBag.UserCurent) || ViewBag.EsteAdmin)
-                {
-                    <div class="d-flex">
-
-                        <div>
-
-                            <a class="btn btn-outline-primary" asp-controller="Reviews" asp-action="Edit" asp-route-id="@rev.Id_Review">
-                                <i class="bi bi-pencil-square"></i> Editeaza
-                            </a>
-
-                        </div>
-
-                        <div>
-
-                            <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@rev.Id_Review">
-
-                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                    <br />
-                }
-                
-
-            </div>
-
-            <div class="col-md-2"></div>
-
-        </div>
-
-    </div>
-}
-
-
-@* Afisarea formularului in care se poate adauga o recenzie *@
 @if (User.Identity.IsAuthenticated)
 {
+    var userRating = Model.Ratings.FirstOrDefault(rat => rat.Id_User == ViewBag.UserCurent);
+    @if (userRating == null)
+    {
+            <div class="add-rating">
+                <h4>Adauga rating</h4>
+        <form method="post" asp-controller="Products" asp-action="Show2">
+            
+            <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
+            
+                    <div class="rating  align-items-center rating-input">
+
+                <input type="radio" class="btn-check" name="Value" id="rating-1" value="1" />
+                        <div class="rating-star" onclick="document.getElementById('rating-1').checked = true">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+
+
+                <input type="radio" class="btn-check" name="Value" id="rating-2" value="2" />
+                        <div class="rating-star" onclick="document.getElementById('rating-2').checked = true">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+
+
+                <input type="radio" class="btn-check" name="Value" id="rating-3" value="3" />
+                        <div class="rating-star" onclick="document.getElementById('rating-3').checked = true">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+
+
+                <input type="radio" class="btn-check" name="Value" id="rating-4" value="4" />
+                        <div class="rating-star" onclick="document.getElementById('rating-4').checked = true">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+
+                <input type="radio" class="btn-check" name="Value" id="rating-5" value="5" />
+                        <div class="rating-star" onclick="document.getElementById('rating-5').checked = true">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+            </div>
+            <div class="container">
+                        <button class="btn-success" type="submit">Adauga rating</button>
+            </div>
+           
+            
+        </form>
+        </div>
+    }
+    
+}
+</div>
+@* Afisarea formularului in care se poate adauga o recenzie *@
+<div class="product-details">
+@if (User.Identity.IsAuthenticated)
+{
+
     var userReview = Model.Reviews.FirstOrDefault(rat => rat.Id_User == ViewBag.UserCurent);
     if(userReview == null)
     {
-        <div class="container">
+        
 
-            <div class="row">
-
-                <div class="col-md-2"></div>
-
-                <div class="col-md-8">
-
-                    <div class="card">
+                    
 
                         <form method="post" asp-controller="Products" asp-action="Show">
 
@@ -169,90 +170,34 @@ else
                                 <label>Continut recenzie</label>
                                 <br />
 
-                                <textarea class="form-control" name="Content"></textarea>
+                                <textarea class="form-control" name="Content" placeholder="Scrie o recenzie..."></textarea>
 
                                 <br /><br />
-                                <button class="btn btn-success " type="submit">Adauga recenzia</button>
+                                <button class=" btn-success " type="submit">Adauga recenzia</button>
 
                             </div>
 
                         </form>
 
-                    </div>
+                  
 
-                </div>
 
-                <div class="col-md-2"></div>
 
-            </div>
 
-        </div>
     }
     
 }
-
-@* Afisarea formularului in care se poate adauga un rating *@
-
-
-@if (User.Identity.IsAuthenticated)
-{
-    var userRating = Model.Ratings.FirstOrDefault(rat => rat.Id_User == ViewBag.UserCurent);
-    @if (userRating == null)
-    {
-        <form method="post" asp-controller="Products" asp-action="Show2">
-
-            <input type="hidden" name="Id_Product" value="@Model.Id_Product" />
-            <label>Rate us</label>
-            <div class="rating d-flex align-items-center">
-
-                <input type="radio" class="btn-check" name="Value" id="rating-1" value="1" />
-                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-1">
-                    <i class="bi bi-star-fill"></i>
-                </label>
+</div>
 
 
-                <input type="radio" class="btn-check" name="Value" id="rating-2" value="2" />
-                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-2">
-                    <i class="bi bi-star-fill"></i>
-                </label>
-
-
-                <input type="radio" class="btn-check" name="Value" id="rating-3" value="3" />
-                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-3">
-                    <i class="bi bi-star-fill"></i>
-                </label>
-
-
-                <input type="radio" class="btn-check" name="Value" id="rating-4" value="4" />
-                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-4">
-                    <i class="bi bi-star-fill"></i>
-                </label>
-
-
-                <input type="radio" class="btn-check" name="Value" id="rating-5" value="5" />
-                <label class="btn btn-outline-warning btn-sm rating-star" for="rating-5">
-                    <i class="bi bi-star-fill"></i>
-                </label>
-            </div>
-
-
-            <button class="btn btn-success " type="submit">Adauga rating</button>
-        </form>
-    }
-    <div class="col-md-2"></div>
-    <br />
-    <br />
-}   
 @* Afisare ratings impreuna cu butoanele de editare si stergere *@
-              
 
+<div class="reviews-container">
+    <h3>Rating-uri</h3>
 @foreach (var rat in Model.Ratings)
 {
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-
-            <div class="col-md-8">
+        <div class="rating-item">
+            <div class="rating-stars">
 
                 <div>
                     <p>
@@ -260,21 +205,21 @@ else
                         {
                             if (i <= rat.Value)
                             {
-                                <i class="bi bi-star-fill text-warning"></i> 
+                                <i class="bi bi-star-fill text-warning"></i>
                             }
                             else
                             {
-                                <i class="bi bi-star text-muted"></i> 
+                                <i class="bi bi-star text-muted"></i>
                             }
                         }
                     </p>
-                    <small>@rat.Date</small>
+                    <small class="rating-date">@rat.Date</small>
                 </div>
                 <br>
 
                 @if (User.Identity.IsAuthenticated && rat.Id_User == ViewBag.UserCurent)
                 {
-                        <div class="d-flex">
+                    <div class="rating-actions">
                         <div>
                             <a class="btn btn-outline-primary" asp-controller="Ratings" asp-action="Edit" asp-route-id="@rat.Id_Rating">
                                 <i class="bi bi-pencil-square"></i> Editeaza
@@ -293,9 +238,54 @@ else
                 <br />
             </div>
 
-            <div class="col-md-2"></div>
         </div>
-    </div>
+  
+}
+</div>
+
+@* Afisare recenzii impreuna cu butoanele de editare si stergere *@
+
+<div class="reviews-container">
+    <h3>Recenzii</h3>
+    @foreach (var rev in Model.Reviews)
+    {
+        <div class="review">
+
+            <div>
+
+                <p>@rev.Content</p>
+                <small>@rev.Date</small>
+
+            </div>
+            <br>
+            @if (User.Identity.IsAuthenticated && (rev.Id_User == ViewBag.UserCurent) || ViewBag.EsteAdmin)
+            {
+                <div class="review-actions">
+
+                    <div>
+
+                        <a class="btn btn-outline-primary" asp-controller="Reviews" asp-action="Edit" asp-route-id="@rev.Id_Review">
+                            <i class="bi bi-pencil-square"></i> Editeaza
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@rev.Id_Review">
+
+                            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <br />
+            }
+
+
+        </div>
     }
-
-
+</div>

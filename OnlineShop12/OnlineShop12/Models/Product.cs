@@ -14,18 +14,17 @@ namespace OnlineShop12.Models
          public virtual Category? Category { get; set; }
         [NotMapped]
         public IEnumerable<SelectListItem>? Categ { get; set; }
+        [Required(ErrorMessage = "Titlul este obligatoriu")]
         public string Title { get; set; }
         public bool isApproved { get; set; } = false;
         public bool isDeleted { get; set; }
+        [Required(ErrorMessage = "Descrierea este obligatorie")]
         public string Description { get; set; }
-
-        public int Price { get; set; }
-
-        public int Stock { get; set; }
-
+        [Required(ErrorMessage = "Pretul este obligatoriu")]
+        public int? Price { get; set; }
+        [Required(ErrorMessage = "Stocul este obligatoriu")]
+        public int? Stock { get; set; }
         public double? Score { get; set; }
-
-
 
         public string? ImagePath { get; set; }
 

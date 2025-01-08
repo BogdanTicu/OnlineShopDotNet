@@ -1,32 +1,52 @@
-﻿@model IEnumerable<OnlineShop12.Models.Order>
+﻿
+@model IEnumerable<OnlineShop12.Models.Order>
 
-<h2>Comenzile mele</h2>
+<div class="container">
+    <h2 class="text-center mb-4">Comenzile mele</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Produse</th>
-            <th>Suma totală</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var order in Model)
-        {
-            <tr>
-                <td>@order.Id_Order</td>
-                <td>
-                    <ul>
-                        @foreach (var orderProduct in order.OrderProducts)
-                        {
-                            <li>@orderProduct.Product.Title (@orderProduct.Product.Price RON)</li>
-                        }
-                    </ul>
-                </td>
-                <td>@order.Total_Amount RON</td>
-                <td>@order.Status</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Produse</th>
+                    <th>Suma totală</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td class="align-middle">@order.Id_Order</td>
+                        <td>
+                            <ul class="list-unstyled mb-0">
+                                @foreach (var orderProduct in order.OrderProducts)
+                                {
+                                    <li class="mb-1">
+                                        <span class="accent">@orderProduct.Product.Title</span>
+                                        <span class="ms-2">@orderProduct.Product.Price RON</span>
+                                    </li>
+                                }
+                            </ul>
+                        </td>
+                        <td class="align-middle">
+                            <span class="accent">@order.Total_Amount RON</span>
+                        </td>
+                        <td class="align-middle">
+                            <span class="badge bg-primary">@order.Status</span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="text-center mt-4">
+            <p>Nu aveți comenzi încă.</p>
+            <a href="/Products" class="btn btn-primary mt-3">Începeți cumpărăturile</a>
+        </div>
+    }
+</div>
